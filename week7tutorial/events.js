@@ -19,3 +19,6 @@ function toggleVisibility(){
     }
 }
 
+// Script calls
+document.getElementById('Chart Toggle').addEventListener('click', toggleVisibility)
+
