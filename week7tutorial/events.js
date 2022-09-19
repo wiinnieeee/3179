@@ -6,19 +6,17 @@ function incrementCounter(){
     spanElement.innerText = count;
     spanElement.setAttribute('numberOfClicks',count);
 }
-// Script calls
-document.getElementById('incrementbutton').addEventListener('click', incrementCounter)
-
 function toggleVisibility(){
     var chartImage = document.getElementById("chart1");
     if (chartImage.style.display == "none"){
-        chartImage.style.display='block'
+        chartImage.style.display='block';
     }
     else{
-        chartImage.style.display == "none"
+        chartImage.style.display ="none";
     }
 }
 
 // Script calls
-document.getElementById('Chart Toggle').addEventListener('click', toggleVisibility)
+document.getElementById('incrementbutton').addEventListener('click', incrementCounter);
+document.getElementById('Chart Toggle').addEventListener('click', toggleVisibility);
 
