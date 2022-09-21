@@ -5,7 +5,7 @@
     "height": 400,
     "projection": {"type": "equalEarth"},
     "data": {
-    "url": "https://github.com/wiinnieeee/3179/blob/50938a13ee8cf09408ee0d1b8375548f649cc9b9/Project2/js/ne_110.json",
+    "url": "https://github.com/wiinnieeee/3179/blob/50938a13ee8cf09408ee0d1b8375548f649cc9b9/Project2/js/ne_110.topojson",
     "format": {"type": "topojson", "feature": "ne_110"}
     },
     "transform": [
