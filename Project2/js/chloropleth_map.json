@@ -5,8 +5,7 @@
     "height": 400,
     "projection": {"type": "equalEarth"},
     "data": {
-    "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT317
-    9/main/VegaLite/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://github.com/wiinnieeee/3179/blob/50938a13ee8cf09408ee0d1b8375548f649cc9b9/Project2/js/ne_110.json",
     "format": {"type": "topojson", "feature": "ne_110"}
     },
     "transform": [
@@ -14,12 +13,10 @@
     "lookup": "properties.NAME",
     "from": {
     "data": {
-    "url": "https://raw.githubusercontent.com/JiazhouLiu/
-    FIT3179/main/VegaLite/3_choropleth_map/data/covid_10_10_2020.cs
-    v"
+    "url": "https://github.com/wiinnieeee/3179/blob/50938a13ee8cf09408ee0d1b8375548f649cc9b9/Project2/data/world_risk_index_2021.xlsx"
     },
     "key": "Region",
-    "fields": ["Active"]
+    "fields": ["WRI"]
     }
     },
     {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
