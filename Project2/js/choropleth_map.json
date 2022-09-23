@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "World Disaster Risks Dataset",
+    "title": "World Risk Index (WRI) of Countries in the World in 2021",
     "width": 800,
     "height": 400,
     "projection": {"type": "equalEarth"},
