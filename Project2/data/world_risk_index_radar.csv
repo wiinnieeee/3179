@@ -1,182 +1,1087 @@
-﻿Region,WRI,Exposure,Vulnerability,Susceptibility,Lack of Coping Capabilities, Lack of Adaptive Capacities
-Vanuatu,47.73,82.55,57.82,39.66,81.21,52.59
-Solomon Is.,31.16,51.13,60.95,46.07,81.14,55.63
-Tonga,30.51,63.63,47.95,28.42,79.81,35.62
-Dominica,27.42,61.74,44.41,23.42,71.13,38.67
-Antigua and Barb.,27.28,67.73,40.28,23.8,64.41,32.62
-Brunei,22.77,58.17,39.14,15.33,68.13,33.96
-Guyana,21.83,43.93,49.69,25.96,77.23,45.88
-Philippines,21.39,42.68,50.11,28.63,82.14,39.56
-Papua New Guinea,20.9,30.62,68.27,55.28,86.16,63.37
-Guatemala,20.23,36.79,54.98,32.55,85.66,46.72
-Cabo Verde,17.72,37.23,47.59,28.86,72.71,41.21
-Costa Rica,17.06,44.27,38.54,19.96,65.33,30.34
-Bangladesh,16.23,28.11,57.74,32.57,85.57,55.07
-Fiji,16.06,34.51,46.55,22.06,76.63,40.95
-Cambodia,15.8,26.89,58.76,38.89,86.61,50.79
-Timor-Leste,15.75,28.27,55.73,41.83,75.72,49.64
-Djibouti,15.48,25.78,60.03,36.19,84.33,59.58
-El Salvador,15.32,31.62,48.46,24.31,78.66,42.41
-Kiribati,15.14,26.41,57.34,39.67,82.82,49.52
-Comoros,14.91,23.62,63.13,45.93,85.39,58.06
-Haiti,14.54,21.41,67.91,49.93,90.36,63.44
-Nicaragua,14.12,26.02,54.25,32.27,83.29,47.19
-Niger,13.9,19.27,72.15,61.72,87.91,66.83
-Guinea-Bissau,13.39,18.88,70.92,60.17,89.2,63.39
-Cameroon,13.07,20.35,64.21,47.38,88.58,56.66
-Nigeria,12.66,19.64,64.46,49.7,88.58,55.1
-Uruguay,12.53,35.97,34.83,19.22,54.25,31.01
-Gambia,12.4,19.75,62.78,43.58,83.02,61.73
-Jamaica,12.02,25.92,46.37,24.92,74.52,39.67
-Chad,11.94,15.76,75.75,64.96,92.16,70.13
-Benin,11.71,17.92,65.33,54.09,81.42,60.49
-Dominican Rep.,11.49,24.72,46.48,23.35,78.34,37.76
-Chile,11.32,32.51,34.83,17.79,59.44,27.25
-Honduras,11.23,20.66,54.35,31.62,85.74,45.68
-Burkina Faso,11.19,16.59,67.48,57.08,84.39,60.98
-Togo,10.99,16.6,66.23,55.77,86.14,56.79
-Mali,10.71,15.61,68.64,49.75,88.6,67.58
-Indonesia,10.67,21.3,50.1,26.06,78.71,45.54
-Madagascar,10.44,14.97,69.71,65.83,86.32,56.97
-Burundi,10.42,14.88,70.02,62.29,90.43,57.34
-Kenya,10.33,16.63,62.13,50.8,85.5,50.1
-Angola,10.28,15.61,65.86,52.89,86.89,57.8
-Vietnam,10.27,22.04,46.6,23.73,76.73,39.34
-Côte d'Ivoire,9.98,15.57,64.1,47.26,85.61,59.43
-Senegal,9.79,16.5,59.31,44.64,77.87,55.42
-Japan,9.66,38.51,25.09,17.92,39.42,17.94
-Sierra Leone,9.4,13.65,68.87,55.15,85.39,66.07
-Ghana,9.32,16.38,56.88,41.6,78.75,50.29
-Zimbabwe,9.3,14.51,64.11,55.02,88.44,48.88
-Mozambique,9.11,13.26,68.73,62.6,88.45,55.13
-Mauritius,9.04,23.85,37.92,17.39,58.21,38.17
-Tanzania,8.94,13.97,64,56.49,83.21,52.3
-Malawi,8.94,13.35,66.98,59.46,84.68,56.79
-Liberia,8.92,13.48,66.17,55.63,87.16,55.73
-Ecuador,8.82,18.75,47.05,24.96,76.45,39.74
-Dem. Rep. Congo,8.78,11.86,74.04,67.76,92.8,61.55
-Trinidad and Tobago,8.67,22.58,38.41,18.99,61.24,34.99
-Guinea,8.65,12.7,68.08,51.87,89.08,63.29
-Uganda,8.64,12.88,67.07,61.54,88.05,51.63
-Sudan,8.47,13.13,64.49,44.93,92.3,56.25
-Albania,8.23,19.77,41.63,20.1,74.77,30.03
-Mauritania,8.2,13.15,62.37,38.15,86.97,61.98
-Afghanistan,8.18,12.27,66.63,48.57,91.4,59.93
-Belize,8.03,16.73,47.97,28.2,74.46,41.26
-Venezuela,7.99,16.02,49.86,25.75,86.35,37.47
-Netherlands,7.98,31.75,25.13,14.66,44.34,16.4
-Ethiopia,7.93,11.75,67.52,56.76,87.35,58.45
-Uzbekistan,7.91,16.28,48.56,30.25,75.65,39.79
-eSwatini,7.85,13.54,57.98,42.35,82.62,48.98
-Panama,7.76,17.74,43.74,23.03,73.03,35.15
-Malaysia,7.73,19.09,40.49,17.05,71.19,33.22
-Zambia,7.72,12.12,63.67,61.69,81.31,48
-Algeria,7.66,16.61,46.14,22.24,76.81,39.36
-Central African Rep.,7.64,10.08,75.83,70.52,90.56,66.41
-Sri Lanka,7.55,15.99,47.19,23.05,76.35,42.17
-Rwanda,7.55,12.37,61.04,52.14,79.44,51.55
-Suriname,7.38,15.24,48.41,28.82,74.7,41.7
-Eq. Guinea,7.29,12.73,57.28,40.64,86.57,44.64
-Kyrgyzstan,7.25,16.49,43.96,24.59,75.22,32.07
-Myanmar,7.25,12.92,56.11,29.42,86.27,52.64
-Micronesia,7.11,14.03,50.71,31.04,72.21,48.89
-Greece,6.93,22.23,31.18,17.42,58.93,17.2
-Eritrea,6.87,9.66,71.09,63.28,89.71,60.29
-Kongo,6.84,10.56,64.76,54.39,88.63,51.26
-Pakistan,6.8,11.95,56.88,33.57,84.71,52.37
-Montenegro,6.75,17.8,37.92,18.57,68.2,26.99
-Peru,6.75,14.92,45.26,26.29,76.22,33.27
-Colombia,6.72,14.83,45.32,22.8,77.04,36.13
-Lesotho,6.66,11.1,59.98,43.97,81.5,54.47
-India,6.65,12.52,53.09,32.15,78.7,48.42
-Gabon,6.6,12.75,51.79,32.58,75.08,47.71
-Thailand,6.52,14.79,44.06,17.62,78.65,35.91
-South Africa,6.46,13.47,47.93,30.9,73.35,39.54
-Mexico,6.03,14.2,42.44,20.86,74.25,32.2
-China,5.87,14.29,41.08,21.64,71.42,30.17
-Namibia,5.86,11.3,51.89,42.89,74.11,38.66
-Tunisia,5.85,13.08,44.74,20.9,75.5,37.83
-Turkmenistan,5.85,12.25,47.72,27.99,76.76,38.42
-Tajikistan,5.84,12.15,48.06,32.57,76.27,35.35
-North Macedonia,5.82,14.48,40.21,18.81,70.58,31.25
-Morocco,5.82,12.12,48,25.02,79.35,39.63
-Azerbaijan,5.81,14.21,40.9,18.46,72,32.24
-Syria,5.8,10.63,54.54,27.32,90.76,45.54
-Iraq,5.8,10.4,55.77,26.86,87.89,52.57
-Cuba,5.75,16.3,35.26,19.7,53.28,32.79
-Yemen,5.72,8.27,69.12,44.85,93.17,69.34
-Romania,5.71,15.39,37.11,19.47,63.14,28.71
-Georgia,5.69,15.14,37.56,22.15,59.22,31.32
-Samoa,5.54,11.46,48.32,25.56,79.83,39.56
-Lebanon,5.49,11.61,47.31,20.26,81,40.66
-Serbia,5.42,13.84,39.14,21.89,68.39,27.15
-Armenia,5.4,14.23,37.92,19.62,65.37,28.76
-Turkey,5.11,12.57,40.65,18.09,72.44,31.42
-Hungary,5.07,15.24,33.25,16.07,58.89,24.78
-Iran,5.03,10.9,46.15,21.67,82.62,34.17
-Brazil,4.97,11.35,43.8,22.68,76.22,32.51
-New Zealand,4.96,17.59,28.2,16.06,47.45,21.08
-Seychellen,4.89,11.94,40.97,18.23,64.82,39.86
-Italy,4.74,15.02,31.58,16.9,60.29,17.55
-Bolivia,4.71,9.49,49.67,31.83,79.79,37.38
-Bosnia and Herz.,4.68,10.89,43.01,18.77,74.61,35.65
-Nepal,4.66,8.51,54.76,32.9,83.28,48.1
-Australia,4.54,18.07,25.12,15.66,43.67,16.02
-Saint Lucia,4.52,9.83,45.96,23.68,74.26,39.95
-Ireland,4.49,16.68,26.9,15.4,47.66,17.65
-Laos,4.46,8.01,55.64,32.86,82.91,51.14
-Kuwait,4.32,11.9,36.28,14.12,70.09,24.64
-Bahamas,4.27,11.63,36.74,17.68,58.92,33.63
-Croatia,4.16,12.04,34.55,17.36,63.67,22.63
-Bulgaria,4.16,11.93,34.9,21.11,58.78,24.8
-Jordan,4.11,9.24,44.47,22.59,68.26,42.56
-Moldova,4,9.63,41.51,21.56,68.87,34.1
-United States of America,3.98,13.03,30.58,15.92,54.15,21.68
-Botswana,3.94,8.23,47.86,32.44,71.83,39.3
-Spain,3.62,11.77,30.73,15.86,58.22,18.11
-Paraguay,3.56,7.43,47.98,24.11,79.92,39.9
-Russia,3.53,9.5,37.21,18.64,65.83,27.15
-Portugal,3.52,11.6,30.38,16.6,51.49,23.04
-Argentina,3.52,9.6,36.63,20.35,60.27,29.27
-United Kingdom,3.51,12.58,27.92,16.18,48.71,18.87
-Kazakhstan,3.48,9.34,37.29,17.64,65.09,29.15
-Libya,3.47,7.37,47.12,22.65,83.76,34.94
-Slovenia,3.42,11.4,30.04,14.87,56.15,19.09
-Slovakia,3.33,10.1,32.97,14.84,59.15,24.93
-Bhutan,3.25,6.9,47.12,23.72,72.44,45.21
-Cyprus,3.21,8.97,35.78,15.24,67.63,24.46
-United Arab Emirates,3.14,10.48,29.97,9.82,54.52,25.57
-South Korea,3.13,11.4,27.45,13.36,48.48,20.5
-Poland,3.07,9.45,32.46,15.56,59.65,22.17
-Austria,3.06,13.08,23.41,13.87,41,15.35
-Czechia,3.06,10.76,28.46,15.09,49.48,20.8
-Latvia,3.01,8.8,34.21,18.9,60.06,23.67
-Mongolia,2.98,6.91,43.09,29.02,64.44,35.81
-Bahrain,2.93,7.33,39.94,15.31,76.81,27.71
-Norway,2.87,10.84,26.48,13.8,42.79,22.86
-Canada,2.81,10.36,27.1,15.07,47.49,18.73
-Israel,2.81,8.45,33.3,18.51,58.57,22.83
-Denmark,2.79,11.92,23.43,14.9,40.09,15.3
-Ukraine,2.72,6.92,39.36,18.83,68.43,30.81
-Belgium,2.71,11.41,23.79,14.66,42.49,14.22
-Germany,2.66,11.51,23.12,15.02,38.35,16
-Belarus,2.64,8,32.96,16.68,56.36,25.84
-São Tomé and Principe,2.57,4.54,56.6,45.67,77.23,46.9
-Oman,2.54,6.04,42.02,23.68,66.65,35.73
-Luxembourg,2.53,9.57,26.41,11.86,47.15,20.23
-France,2.51,9.63,26.06,16.68,45.1,16.41
-Singapore,2.5,8.88,28.1,10.34,54.01,19.94
-Sweden,2.25,8.8,25.62,15.63,45.43,15.81
-Lithuania,2.18,7.35,29.72,18.17,50.01,20.99
-Switzerland,2.04,9.01,22.68,13.97,38.92,15.14
-Finland,2,8.26,24.24,15.78,41.2,15.75
-Estonia,1.99,6.51,30.52,16.6,53.61,21.35
-Egypt,1.82,3.76,48.33,22.22,83.15,39.62
-Island,1.71,7.14,23.95,13.99,43.2,14.67
-Maldives,1.69,4.18,40.39,15.59,65.82,39.76
-Barbados,1.37,3.61,37.96,20.66,60.11,33.12
-Grenada,1.06,2.4,43.98,26.36,69.21,36.38
-Saudi Arabia,0.94,2.58,36.46,13.83,68.21,27.34
-St. Vin. and Gren.,0.7,1.62,43,28.16,69.86,30.97
-Malta,0.69,2.31,29.96,15.04,54.76,20.09
-Qatar,0.3,0.85,34.8,9.03,65.03,30.34
+﻿Region,Attribute,Value
+Vanuatu,WRI,47.73
+Vanuatu,Exposure,82.55
+Vanuatu,Vulnerability,57.82
+Vanuatu,Susceptibility,39.66
+Vanuatu,Lack of Coping Capabilities,81.21
+Vanuatu, Lack of Adaptive Capacities,52.59
+Solomon Is.,WRI,31.16
+Solomon Is.,Exposure,51.13
+Solomon Is.,Vulnerability,60.95
+Solomon Is.,Susceptibility,46.07
+Solomon Is.,Lack of Coping Capabilities,81.14
+Solomon Is., Lack of Adaptive Capacities,55.63
+Tonga,WRI,30.51
+Tonga,Exposure,63.63
+Tonga,Vulnerability,47.95
+Tonga,Susceptibility,28.42
+Tonga,Lack of Coping Capabilities,79.81
+Tonga, Lack of Adaptive Capacities,35.62
+Dominica,WRI,27.42
+Dominica,Exposure,61.74
+Dominica,Vulnerability,44.41
+Dominica,Susceptibility,23.42
+Dominica,Lack of Coping Capabilities,71.13
+Dominica, Lack of Adaptive Capacities,38.67
+Antigua and Barb.,WRI,27.28
+Antigua and Barb.,Exposure,67.73
+Antigua and Barb.,Vulnerability,40.28
+Antigua and Barb.,Susceptibility,23.8
+Antigua and Barb.,Lack of Coping Capabilities,64.41
+Antigua and Barb., Lack of Adaptive Capacities,32.62
+Brunei,WRI,22.77
+Brunei,Exposure,58.17
+Brunei,Vulnerability,39.14
+Brunei,Susceptibility,15.33
+Brunei,Lack of Coping Capabilities,68.13
+Brunei, Lack of Adaptive Capacities,33.96
+Guyana,WRI,21.83
+Guyana,Exposure,43.93
+Guyana,Vulnerability,49.69
+Guyana,Susceptibility,25.96
+Guyana,Lack of Coping Capabilities,77.23
+Guyana, Lack of Adaptive Capacities,45.88
+Philippines,WRI,21.39
+Philippines,Exposure,42.68
+Philippines,Vulnerability,50.11
+Philippines,Susceptibility,28.63
+Philippines,Lack of Coping Capabilities,82.14
+Philippines, Lack of Adaptive Capacities,39.56
+Papua New Guinea,WRI,20.9
+Papua New Guinea,Exposure,30.62
+Papua New Guinea,Vulnerability,68.27
+Papua New Guinea,Susceptibility,55.28
+Papua New Guinea,Lack of Coping Capabilities,86.16
+Papua New Guinea, Lack of Adaptive Capacities,63.37
+Guatemala,WRI,20.23
+Guatemala,Exposure,36.79
+Guatemala,Vulnerability,54.98
+Guatemala,Susceptibility,32.55
+Guatemala,Lack of Coping Capabilities,85.66
+Guatemala, Lack of Adaptive Capacities,46.72
+Cabo Verde,WRI,17.72
+Cabo Verde,Exposure,37.23
+Cabo Verde,Vulnerability,47.59
+Cabo Verde,Susceptibility,28.86
+Cabo Verde,Lack of Coping Capabilities,72.71
+Cabo Verde, Lack of Adaptive Capacities,41.21
+Costa Rica,WRI,17.06
+Costa Rica,Exposure,44.27
+Costa Rica,Vulnerability,38.54
+Costa Rica,Susceptibility,19.96
+Costa Rica,Lack of Coping Capabilities,65.33
+Costa Rica, Lack of Adaptive Capacities,30.34
+Bangladesh,WRI,16.23
+Bangladesh,Exposure,28.11
+Bangladesh,Vulnerability,57.74
+Bangladesh,Susceptibility,32.57
+Bangladesh,Lack of Coping Capabilities,85.57
+Bangladesh, Lack of Adaptive Capacities,55.07
+Fiji,WRI,16.06
+Fiji,Exposure,34.51
+Fiji,Vulnerability,46.55
+Fiji,Susceptibility,22.06
+Fiji,Lack of Coping Capabilities,76.63
+Fiji, Lack of Adaptive Capacities,40.95
+Cambodia,WRI,15.8
+Cambodia,Exposure,26.89
+Cambodia,Vulnerability,58.76
+Cambodia,Susceptibility,38.89
+Cambodia,Lack of Coping Capabilities,86.61
+Cambodia, Lack of Adaptive Capacities,50.79
+Timor-Leste,WRI,15.75
+Timor-Leste,Exposure,28.27
+Timor-Leste,Vulnerability,55.73
+Timor-Leste,Susceptibility,41.83
+Timor-Leste,Lack of Coping Capabilities,75.72
+Timor-Leste, Lack of Adaptive Capacities,49.64
+Djibouti,WRI,15.48
+Djibouti,Exposure,25.78
+Djibouti,Vulnerability,60.03
+Djibouti,Susceptibility,36.19
+Djibouti,Lack of Coping Capabilities,84.33
+Djibouti, Lack of Adaptive Capacities,59.58
+El Salvador,WRI,15.32
+El Salvador,Exposure,31.62
+El Salvador,Vulnerability,48.46
+El Salvador,Susceptibility,24.31
+El Salvador,Lack of Coping Capabilities,78.66
+El Salvador, Lack of Adaptive Capacities,42.41
+Kiribati,WRI,15.14
+Kiribati,Exposure,26.41
+Kiribati,Vulnerability,57.34
+Kiribati,Susceptibility,39.67
+Kiribati,Lack of Coping Capabilities,82.82
+Kiribati, Lack of Adaptive Capacities,49.52
+Comoros,WRI,14.91
+Comoros,Exposure,23.62
+Comoros,Vulnerability,63.13
+Comoros,Susceptibility,45.93
+Comoros,Lack of Coping Capabilities,85.39
+Comoros, Lack of Adaptive Capacities,58.06
+Haiti,WRI,14.54
+Haiti,Exposure,21.41
+Haiti,Vulnerability,67.91
+Haiti,Susceptibility,49.93
+Haiti,Lack of Coping Capabilities,90.36
+Haiti, Lack of Adaptive Capacities,63.44
+Nicaragua,WRI,14.12
+Nicaragua,Exposure,26.02
+Nicaragua,Vulnerability,54.25
+Nicaragua,Susceptibility,32.27
+Nicaragua,Lack of Coping Capabilities,83.29
+Nicaragua, Lack of Adaptive Capacities,47.19
+Niger,WRI,13.9
+Niger,Exposure,19.27
+Niger,Vulnerability,72.15
+Niger,Susceptibility,61.72
+Niger,Lack of Coping Capabilities,87.91
+Niger, Lack of Adaptive Capacities,66.83
+Guinea-Bissau,WRI,13.39
+Guinea-Bissau,Exposure,18.88
+Guinea-Bissau,Vulnerability,70.92
+Guinea-Bissau,Susceptibility,60.17
+Guinea-Bissau,Lack of Coping Capabilities,89.2
+Guinea-Bissau, Lack of Adaptive Capacities,63.39
+Cameroon,WRI,13.07
+Cameroon,Exposure,20.35
+Cameroon,Vulnerability,64.21
+Cameroon,Susceptibility,47.38
+Cameroon,Lack of Coping Capabilities,88.58
+Cameroon, Lack of Adaptive Capacities,56.66
+Nigeria,WRI,12.66
+Nigeria,Exposure,19.64
+Nigeria,Vulnerability,64.46
+Nigeria,Susceptibility,49.7
+Nigeria,Lack of Coping Capabilities,88.58
+Nigeria, Lack of Adaptive Capacities,55.1
+Uruguay,WRI,12.53
+Uruguay,Exposure,35.97
+Uruguay,Vulnerability,34.83
+Uruguay,Susceptibility,19.22
+Uruguay,Lack of Coping Capabilities,54.25
+Uruguay, Lack of Adaptive Capacities,31.01
+Gambia,WRI,12.4
+Gambia,Exposure,19.75
+Gambia,Vulnerability,62.78
+Gambia,Susceptibility,43.58
+Gambia,Lack of Coping Capabilities,83.02
+Gambia, Lack of Adaptive Capacities,61.73
+Jamaica,WRI,12.02
+Jamaica,Exposure,25.92
+Jamaica,Vulnerability,46.37
+Jamaica,Susceptibility,24.92
+Jamaica,Lack of Coping Capabilities,74.52
+Jamaica, Lack of Adaptive Capacities,39.67
+Chad,WRI,11.94
+Chad,Exposure,15.76
+Chad,Vulnerability,75.75
+Chad,Susceptibility,64.96
+Chad,Lack of Coping Capabilities,92.16
+Chad, Lack of Adaptive Capacities,70.13
+Benin,WRI,11.71
+Benin,Exposure,17.92
+Benin,Vulnerability,65.33
+Benin,Susceptibility,54.09
+Benin,Lack of Coping Capabilities,81.42
+Benin, Lack of Adaptive Capacities,60.49
+Dominican Rep.,WRI,11.49
+Dominican Rep.,Exposure,24.72
+Dominican Rep.,Vulnerability,46.48
+Dominican Rep.,Susceptibility,23.35
+Dominican Rep.,Lack of Coping Capabilities,78.34
+Dominican Rep., Lack of Adaptive Capacities,37.76
+Chile,WRI,11.32
+Chile,Exposure,32.51
+Chile,Vulnerability,34.83
+Chile,Susceptibility,17.79
+Chile,Lack of Coping Capabilities,59.44
+Chile, Lack of Adaptive Capacities,27.25
+Honduras,WRI,11.23
+Honduras,Exposure,20.66
+Honduras,Vulnerability,54.35
+Honduras,Susceptibility,31.62
+Honduras,Lack of Coping Capabilities,85.74
+Honduras, Lack of Adaptive Capacities,45.68
+Burkina Faso,WRI,11.19
+Burkina Faso,Exposure,16.59
+Burkina Faso,Vulnerability,67.48
+Burkina Faso,Susceptibility,57.08
+Burkina Faso,Lack of Coping Capabilities,84.39
+Burkina Faso, Lack of Adaptive Capacities,60.98
+Togo,WRI,10.99
+Togo,Exposure,16.6
+Togo,Vulnerability,66.23
+Togo,Susceptibility,55.77
+Togo,Lack of Coping Capabilities,86.14
+Togo, Lack of Adaptive Capacities,56.79
+Mali,WRI,10.71
+Mali,Exposure,15.61
+Mali,Vulnerability,68.64
+Mali,Susceptibility,49.75
+Mali,Lack of Coping Capabilities,88.6
+Mali, Lack of Adaptive Capacities,67.58
+Indonesia,WRI,10.67
+Indonesia,Exposure,21.3
+Indonesia,Vulnerability,50.1
+Indonesia,Susceptibility,26.06
+Indonesia,Lack of Coping Capabilities,78.71
+Indonesia, Lack of Adaptive Capacities,45.54
+Madagascar,WRI,10.44
+Madagascar,Exposure,14.97
+Madagascar,Vulnerability,69.71
+Madagascar,Susceptibility,65.83
+Madagascar,Lack of Coping Capabilities,86.32
+Madagascar, Lack of Adaptive Capacities,56.97
+Burundi,WRI,10.42
+Burundi,Exposure,14.88
+Burundi,Vulnerability,70.02
+Burundi,Susceptibility,62.29
+Burundi,Lack of Coping Capabilities,90.43
+Burundi, Lack of Adaptive Capacities,57.34
+Kenya,WRI,10.33
+Kenya,Exposure,16.63
+Kenya,Vulnerability,62.13
+Kenya,Susceptibility,50.8
+Kenya,Lack of Coping Capabilities,85.5
+Kenya, Lack of Adaptive Capacities,50.1
+Angola,WRI,10.28
+Angola,Exposure,15.61
+Angola,Vulnerability,65.86
+Angola,Susceptibility,52.89
+Angola,Lack of Coping Capabilities,86.89
+Angola, Lack of Adaptive Capacities,57.8
+Vietnam,WRI,10.27
+Vietnam,Exposure,22.04
+Vietnam,Vulnerability,46.6
+Vietnam,Susceptibility,23.73
+Vietnam,Lack of Coping Capabilities,76.73
+Vietnam, Lack of Adaptive Capacities,39.34
+Côte d'Ivoire,WRI,9.98
+Côte d'Ivoire,Exposure,15.57
+Côte d'Ivoire,Vulnerability,64.1
+Côte d'Ivoire,Susceptibility,47.26
+Côte d'Ivoire,Lack of Coping Capabilities,85.61
+Côte d'Ivoire, Lack of Adaptive Capacities,59.43
+Senegal,WRI,9.79
+Senegal,Exposure,16.5
+Senegal,Vulnerability,59.31
+Senegal,Susceptibility,44.64
+Senegal,Lack of Coping Capabilities,77.87
+Senegal, Lack of Adaptive Capacities,55.42
+Japan,WRI,9.66
+Japan,Exposure,38.51
+Japan,Vulnerability,25.09
+Japan,Susceptibility,17.92
+Japan,Lack of Coping Capabilities,39.42
+Japan, Lack of Adaptive Capacities,17.94
+Sierra Leone,WRI,9.4
+Sierra Leone,Exposure,13.65
+Sierra Leone,Vulnerability,68.87
+Sierra Leone,Susceptibility,55.15
+Sierra Leone,Lack of Coping Capabilities,85.39
+Sierra Leone, Lack of Adaptive Capacities,66.07
+Ghana,WRI,9.32
+Ghana,Exposure,16.38
+Ghana,Vulnerability,56.88
+Ghana,Susceptibility,41.6
+Ghana,Lack of Coping Capabilities,78.75
+Ghana, Lack of Adaptive Capacities,50.29
+Zimbabwe,WRI,9.3
+Zimbabwe,Exposure,14.51
+Zimbabwe,Vulnerability,64.11
+Zimbabwe,Susceptibility,55.02
+Zimbabwe,Lack of Coping Capabilities,88.44
+Zimbabwe, Lack of Adaptive Capacities,48.88
+Mozambique,WRI,9.11
+Mozambique,Exposure,13.26
+Mozambique,Vulnerability,68.73
+Mozambique,Susceptibility,62.6
+Mozambique,Lack of Coping Capabilities,88.45
+Mozambique, Lack of Adaptive Capacities,55.13
+Mauritius,WRI,9.04
+Mauritius,Exposure,23.85
+Mauritius,Vulnerability,37.92
+Mauritius,Susceptibility,17.39
+Mauritius,Lack of Coping Capabilities,58.21
+Mauritius, Lack of Adaptive Capacities,38.17
+Tanzania,WRI,8.94
+Tanzania,Exposure,13.97
+Tanzania,Vulnerability,64
+Tanzania,Susceptibility,56.49
+Tanzania,Lack of Coping Capabilities,83.21
+Tanzania, Lack of Adaptive Capacities,52.3
+Malawi,WRI,8.94
+Malawi,Exposure,13.35
+Malawi,Vulnerability,66.98
+Malawi,Susceptibility,59.46
+Malawi,Lack of Coping Capabilities,84.68
+Malawi, Lack of Adaptive Capacities,56.79
+Liberia,WRI,8.92
+Liberia,Exposure,13.48
+Liberia,Vulnerability,66.17
+Liberia,Susceptibility,55.63
+Liberia,Lack of Coping Capabilities,87.16
+Liberia, Lack of Adaptive Capacities,55.73
+Ecuador,WRI,8.82
+Ecuador,Exposure,18.75
+Ecuador,Vulnerability,47.05
+Ecuador,Susceptibility,24.96
+Ecuador,Lack of Coping Capabilities,76.45
+Ecuador, Lack of Adaptive Capacities,39.74
+Dem. Rep. Congo,WRI,8.78
+Dem. Rep. Congo,Exposure,11.86
+Dem. Rep. Congo,Vulnerability,74.04
+Dem. Rep. Congo,Susceptibility,67.76
+Dem. Rep. Congo,Lack of Coping Capabilities,92.8
+Dem. Rep. Congo, Lack of Adaptive Capacities,61.55
+Trinidad and Tobago,WRI,8.67
+Trinidad and Tobago,Exposure,22.58
+Trinidad and Tobago,Vulnerability,38.41
+Trinidad and Tobago,Susceptibility,18.99
+Trinidad and Tobago,Lack of Coping Capabilities,61.24
+Trinidad and Tobago, Lack of Adaptive Capacities,34.99
+Guinea,WRI,8.65
+Guinea,Exposure,12.7
+Guinea,Vulnerability,68.08
+Guinea,Susceptibility,51.87
+Guinea,Lack of Coping Capabilities,89.08
+Guinea, Lack of Adaptive Capacities,63.29
+Uganda,WRI,8.64
+Uganda,Exposure,12.88
+Uganda,Vulnerability,67.07
+Uganda,Susceptibility,61.54
+Uganda,Lack of Coping Capabilities,88.05
+Uganda, Lack of Adaptive Capacities,51.63
+Sudan,WRI,8.47
+Sudan,Exposure,13.13
+Sudan,Vulnerability,64.49
+Sudan,Susceptibility,44.93
+Sudan,Lack of Coping Capabilities,92.3
+Sudan, Lack of Adaptive Capacities,56.25
+Albania,WRI,8.23
+Albania,Exposure,19.77
+Albania,Vulnerability,41.63
+Albania,Susceptibility,20.1
+Albania,Lack of Coping Capabilities,74.77
+Albania, Lack of Adaptive Capacities,30.03
+Mauritania,WRI,8.2
+Mauritania,Exposure,13.15
+Mauritania,Vulnerability,62.37
+Mauritania,Susceptibility,38.15
+Mauritania,Lack of Coping Capabilities,86.97
+Mauritania, Lack of Adaptive Capacities,61.98
+Afghanistan,WRI,8.18
+Afghanistan,Exposure,12.27
+Afghanistan,Vulnerability,66.63
+Afghanistan,Susceptibility,48.57
+Afghanistan,Lack of Coping Capabilities,91.4
+Afghanistan, Lack of Adaptive Capacities,59.93
+Belize,WRI,8.03
+Belize,Exposure,16.73
+Belize,Vulnerability,47.97
+Belize,Susceptibility,28.2
+Belize,Lack of Coping Capabilities,74.46
+Belize, Lack of Adaptive Capacities,41.26
+Venezuela,WRI,7.99
+Venezuela,Exposure,16.02
+Venezuela,Vulnerability,49.86
+Venezuela,Susceptibility,25.75
+Venezuela,Lack of Coping Capabilities,86.35
+Venezuela, Lack of Adaptive Capacities,37.47
+Netherlands,WRI,7.98
+Netherlands,Exposure,31.75
+Netherlands,Vulnerability,25.13
+Netherlands,Susceptibility,14.66
+Netherlands,Lack of Coping Capabilities,44.34
+Netherlands, Lack of Adaptive Capacities,16.4
+Ethiopia,WRI,7.93
+Ethiopia,Exposure,11.75
+Ethiopia,Vulnerability,67.52
+Ethiopia,Susceptibility,56.76
+Ethiopia,Lack of Coping Capabilities,87.35
+Ethiopia, Lack of Adaptive Capacities,58.45
+Uzbekistan,WRI,7.91
+Uzbekistan,Exposure,16.28
+Uzbekistan,Vulnerability,48.56
+Uzbekistan,Susceptibility,30.25
+Uzbekistan,Lack of Coping Capabilities,75.65
+Uzbekistan, Lack of Adaptive Capacities,39.79
+eSwatini,WRI,7.85
+eSwatini,Exposure,13.54
+eSwatini,Vulnerability,57.98
+eSwatini,Susceptibility,42.35
+eSwatini,Lack of Coping Capabilities,82.62
+eSwatini, Lack of Adaptive Capacities,48.98
+Panama,WRI,7.76
+Panama,Exposure,17.74
+Panama,Vulnerability,43.74
+Panama,Susceptibility,23.03
+Panama,Lack of Coping Capabilities,73.03
+Panama, Lack of Adaptive Capacities,35.15
+Malaysia,WRI,7.73
+Malaysia,Exposure,19.09
+Malaysia,Vulnerability,40.49
+Malaysia,Susceptibility,17.05
+Malaysia,Lack of Coping Capabilities,71.19
+Malaysia, Lack of Adaptive Capacities,33.22
+Zambia,WRI,7.72
+Zambia,Exposure,12.12
+Zambia,Vulnerability,63.67
+Zambia,Susceptibility,61.69
+Zambia,Lack of Coping Capabilities,81.31
+Zambia, Lack of Adaptive Capacities,48
+Algeria,WRI,7.66
+Algeria,Exposure,16.61
+Algeria,Vulnerability,46.14
+Algeria,Susceptibility,22.24
+Algeria,Lack of Coping Capabilities,76.81
+Algeria, Lack of Adaptive Capacities,39.36
+Central African Rep.,WRI,7.64
+Central African Rep.,Exposure,10.08
+Central African Rep.,Vulnerability,75.83
+Central African Rep.,Susceptibility,70.52
+Central African Rep.,Lack of Coping Capabilities,90.56
+Central African Rep., Lack of Adaptive Capacities,66.41
+Sri Lanka,WRI,7.55
+Sri Lanka,Exposure,15.99
+Sri Lanka,Vulnerability,47.19
+Sri Lanka,Susceptibility,23.05
+Sri Lanka,Lack of Coping Capabilities,76.35
+Sri Lanka, Lack of Adaptive Capacities,42.17
+Rwanda,WRI,7.55
+Rwanda,Exposure,12.37
+Rwanda,Vulnerability,61.04
+Rwanda,Susceptibility,52.14
+Rwanda,Lack of Coping Capabilities,79.44
+Rwanda, Lack of Adaptive Capacities,51.55
+Suriname,WRI,7.38
+Suriname,Exposure,15.24
+Suriname,Vulnerability,48.41
+Suriname,Susceptibility,28.82
+Suriname,Lack of Coping Capabilities,74.7
+Suriname, Lack of Adaptive Capacities,41.7
+Eq. Guinea,WRI,7.29
+Eq. Guinea,Exposure,12.73
+Eq. Guinea,Vulnerability,57.28
+Eq. Guinea,Susceptibility,40.64
+Eq. Guinea,Lack of Coping Capabilities,86.57
+Eq. Guinea, Lack of Adaptive Capacities,44.64
+Kyrgyzstan,WRI,7.25
+Kyrgyzstan,Exposure,16.49
+Kyrgyzstan,Vulnerability,43.96
+Kyrgyzstan,Susceptibility,24.59
+Kyrgyzstan,Lack of Coping Capabilities,75.22
+Kyrgyzstan, Lack of Adaptive Capacities,32.07
+Myanmar,WRI,7.25
+Myanmar,Exposure,12.92
+Myanmar,Vulnerability,56.11
+Myanmar,Susceptibility,29.42
+Myanmar,Lack of Coping Capabilities,86.27
+Myanmar, Lack of Adaptive Capacities,52.64
+Micronesia,WRI,7.11
+Micronesia,Exposure,14.03
+Micronesia,Vulnerability,50.71
+Micronesia,Susceptibility,31.04
+Micronesia,Lack of Coping Capabilities,72.21
+Micronesia, Lack of Adaptive Capacities,48.89
+Greece,WRI,6.93
+Greece,Exposure,22.23
+Greece,Vulnerability,31.18
+Greece,Susceptibility,17.42
+Greece,Lack of Coping Capabilities,58.93
+Greece, Lack of Adaptive Capacities,17.2
+Eritrea,WRI,6.87
+Eritrea,Exposure,9.66
+Eritrea,Vulnerability,71.09
+Eritrea,Susceptibility,63.28
+Eritrea,Lack of Coping Capabilities,89.71
+Eritrea, Lack of Adaptive Capacities,60.29
+Kongo,WRI,6.84
+Kongo,Exposure,10.56
+Kongo,Vulnerability,64.76
+Kongo,Susceptibility,54.39
+Kongo,Lack of Coping Capabilities,88.63
+Kongo, Lack of Adaptive Capacities,51.26
+Pakistan,WRI,6.8
+Pakistan,Exposure,11.95
+Pakistan,Vulnerability,56.88
+Pakistan,Susceptibility,33.57
+Pakistan,Lack of Coping Capabilities,84.71
+Pakistan, Lack of Adaptive Capacities,52.37
+Montenegro,WRI,6.75
+Montenegro,Exposure,17.8
+Montenegro,Vulnerability,37.92
+Montenegro,Susceptibility,18.57
+Montenegro,Lack of Coping Capabilities,68.2
+Montenegro, Lack of Adaptive Capacities,26.99
+Peru,WRI,6.75
+Peru,Exposure,14.92
+Peru,Vulnerability,45.26
+Peru,Susceptibility,26.29
+Peru,Lack of Coping Capabilities,76.22
+Peru, Lack of Adaptive Capacities,33.27
+Colombia,WRI,6.72
+Colombia,Exposure,14.83
+Colombia,Vulnerability,45.32
+Colombia,Susceptibility,22.8
+Colombia,Lack of Coping Capabilities,77.04
+Colombia, Lack of Adaptive Capacities,36.13
+Lesotho,WRI,6.66
+Lesotho,Exposure,11.1
+Lesotho,Vulnerability,59.98
+Lesotho,Susceptibility,43.97
+Lesotho,Lack of Coping Capabilities,81.5
+Lesotho, Lack of Adaptive Capacities,54.47
+India,WRI,6.65
+India,Exposure,12.52
+India,Vulnerability,53.09
+India,Susceptibility,32.15
+India,Lack of Coping Capabilities,78.7
+India, Lack of Adaptive Capacities,48.42
+Gabon,WRI,6.6
+Gabon,Exposure,12.75
+Gabon,Vulnerability,51.79
+Gabon,Susceptibility,32.58
+Gabon,Lack of Coping Capabilities,75.08
+Gabon, Lack of Adaptive Capacities,47.71
+Thailand,WRI,6.52
+Thailand,Exposure,14.79
+Thailand,Vulnerability,44.06
+Thailand,Susceptibility,17.62
+Thailand,Lack of Coping Capabilities,78.65
+Thailand, Lack of Adaptive Capacities,35.91
+South Africa,WRI,6.46
+South Africa,Exposure,13.47
+South Africa,Vulnerability,47.93
+South Africa,Susceptibility,30.9
+South Africa,Lack of Coping Capabilities,73.35
+South Africa, Lack of Adaptive Capacities,39.54
+Mexico,WRI,6.03
+Mexico,Exposure,14.2
+Mexico,Vulnerability,42.44
+Mexico,Susceptibility,20.86
+Mexico,Lack of Coping Capabilities,74.25
+Mexico, Lack of Adaptive Capacities,32.2
+China,WRI,5.87
+China,Exposure,14.29
+China,Vulnerability,41.08
+China,Susceptibility,21.64
+China,Lack of Coping Capabilities,71.42
+China, Lack of Adaptive Capacities,30.17
+Namibia,WRI,5.86
+Namibia,Exposure,11.3
+Namibia,Vulnerability,51.89
+Namibia,Susceptibility,42.89
+Namibia,Lack of Coping Capabilities,74.11
+Namibia, Lack of Adaptive Capacities,38.66
+Tunisia,WRI,5.85
+Tunisia,Exposure,13.08
+Tunisia,Vulnerability,44.74
+Tunisia,Susceptibility,20.9
+Tunisia,Lack of Coping Capabilities,75.5
+Tunisia, Lack of Adaptive Capacities,37.83
+Turkmenistan,WRI,5.85
+Turkmenistan,Exposure,12.25
+Turkmenistan,Vulnerability,47.72
+Turkmenistan,Susceptibility,27.99
+Turkmenistan,Lack of Coping Capabilities,76.76
+Turkmenistan, Lack of Adaptive Capacities,38.42
+Tajikistan,WRI,5.84
+Tajikistan,Exposure,12.15
+Tajikistan,Vulnerability,48.06
+Tajikistan,Susceptibility,32.57
+Tajikistan,Lack of Coping Capabilities,76.27
+Tajikistan, Lack of Adaptive Capacities,35.35
+North Macedonia,WRI,5.82
+North Macedonia,Exposure,14.48
+North Macedonia,Vulnerability,40.21
+North Macedonia,Susceptibility,18.81
+North Macedonia,Lack of Coping Capabilities,70.58
+North Macedonia, Lack of Adaptive Capacities,31.25
+Morocco,WRI,5.82
+Morocco,Exposure,12.12
+Morocco,Vulnerability,48
+Morocco,Susceptibility,25.02
+Morocco,Lack of Coping Capabilities,79.35
+Morocco, Lack of Adaptive Capacities,39.63
+Azerbaijan,WRI,5.81
+Azerbaijan,Exposure,14.21
+Azerbaijan,Vulnerability,40.9
+Azerbaijan,Susceptibility,18.46
+Azerbaijan,Lack of Coping Capabilities,72
+Azerbaijan, Lack of Adaptive Capacities,32.24
+Syria,WRI,5.8
+Syria,Exposure,10.63
+Syria,Vulnerability,54.54
+Syria,Susceptibility,27.32
+Syria,Lack of Coping Capabilities,90.76
+Syria, Lack of Adaptive Capacities,45.54
+Iraq,WRI,5.8
+Iraq,Exposure,10.4
+Iraq,Vulnerability,55.77
+Iraq,Susceptibility,26.86
+Iraq,Lack of Coping Capabilities,87.89
+Iraq, Lack of Adaptive Capacities,52.57
+Cuba,WRI,5.75
+Cuba,Exposure,16.3
+Cuba,Vulnerability,35.26
+Cuba,Susceptibility,19.7
+Cuba,Lack of Coping Capabilities,53.28
+Cuba, Lack of Adaptive Capacities,32.79
+Yemen,WRI,5.72
+Yemen,Exposure,8.27
+Yemen,Vulnerability,69.12
+Yemen,Susceptibility,44.85
+Yemen,Lack of Coping Capabilities,93.17
+Yemen, Lack of Adaptive Capacities,69.34
+Romania,WRI,5.71
+Romania,Exposure,15.39
+Romania,Vulnerability,37.11
+Romania,Susceptibility,19.47
+Romania,Lack of Coping Capabilities,63.14
+Romania, Lack of Adaptive Capacities,28.71
+Georgia,WRI,5.69
+Georgia,Exposure,15.14
+Georgia,Vulnerability,37.56
+Georgia,Susceptibility,22.15
+Georgia,Lack of Coping Capabilities,59.22
+Georgia, Lack of Adaptive Capacities,31.32
+Samoa,WRI,5.54
+Samoa,Exposure,11.46
+Samoa,Vulnerability,48.32
+Samoa,Susceptibility,25.56
+Samoa,Lack of Coping Capabilities,79.83
+Samoa, Lack of Adaptive Capacities,39.56
+Lebanon,WRI,5.49
+Lebanon,Exposure,11.61
+Lebanon,Vulnerability,47.31
+Lebanon,Susceptibility,20.26
+Lebanon,Lack of Coping Capabilities,81
+Lebanon, Lack of Adaptive Capacities,40.66
+Serbia,WRI,5.42
+Serbia,Exposure,13.84
+Serbia,Vulnerability,39.14
+Serbia,Susceptibility,21.89
+Serbia,Lack of Coping Capabilities,68.39
+Serbia, Lack of Adaptive Capacities,27.15
+Armenia,WRI,5.4
+Armenia,Exposure,14.23
+Armenia,Vulnerability,37.92
+Armenia,Susceptibility,19.62
+Armenia,Lack of Coping Capabilities,65.37
+Armenia, Lack of Adaptive Capacities,28.76
+Turkey,WRI,5.11
+Turkey,Exposure,12.57
+Turkey,Vulnerability,40.65
+Turkey,Susceptibility,18.09
+Turkey,Lack of Coping Capabilities,72.44
+Turkey, Lack of Adaptive Capacities,31.42
+Hungary,WRI,5.07
+Hungary,Exposure,15.24
+Hungary,Vulnerability,33.25
+Hungary,Susceptibility,16.07
+Hungary,Lack of Coping Capabilities,58.89
+Hungary, Lack of Adaptive Capacities,24.78
+Iran,WRI,5.03
+Iran,Exposure,10.9
+Iran,Vulnerability,46.15
+Iran,Susceptibility,21.67
+Iran,Lack of Coping Capabilities,82.62
+Iran, Lack of Adaptive Capacities,34.17
+Brazil,WRI,4.97
+Brazil,Exposure,11.35
+Brazil,Vulnerability,43.8
+Brazil,Susceptibility,22.68
+Brazil,Lack of Coping Capabilities,76.22
+Brazil, Lack of Adaptive Capacities,32.51
+New Zealand,WRI,4.96
+New Zealand,Exposure,17.59
+New Zealand,Vulnerability,28.2
+New Zealand,Susceptibility,16.06
+New Zealand,Lack of Coping Capabilities,47.45
+New Zealand, Lack of Adaptive Capacities,21.08
+Seychellen,WRI,4.89
+Seychellen,Exposure,11.94
+Seychellen,Vulnerability,40.97
+Seychellen,Susceptibility,18.23
+Seychellen,Lack of Coping Capabilities,64.82
+Seychellen, Lack of Adaptive Capacities,39.86
+Italy,WRI,4.74
+Italy,Exposure,15.02
+Italy,Vulnerability,31.58
+Italy,Susceptibility,16.9
+Italy,Lack of Coping Capabilities,60.29
+Italy, Lack of Adaptive Capacities,17.55
+Bolivia,WRI,4.71
+Bolivia,Exposure,9.49
+Bolivia,Vulnerability,49.67
+Bolivia,Susceptibility,31.83
+Bolivia,Lack of Coping Capabilities,79.79
+Bolivia, Lack of Adaptive Capacities,37.38
+Bosnia and Herz.,WRI,4.68
+Bosnia and Herz.,Exposure,10.89
+Bosnia and Herz.,Vulnerability,43.01
+Bosnia and Herz.,Susceptibility,18.77
+Bosnia and Herz.,Lack of Coping Capabilities,74.61
+Bosnia and Herz., Lack of Adaptive Capacities,35.65
+Nepal,WRI,4.66
+Nepal,Exposure,8.51
+Nepal,Vulnerability,54.76
+Nepal,Susceptibility,32.9
+Nepal,Lack of Coping Capabilities,83.28
+Nepal, Lack of Adaptive Capacities,48.1
+Australia,WRI,4.54
+Australia,Exposure,18.07
+Australia,Vulnerability,25.12
+Australia,Susceptibility,15.66
+Australia,Lack of Coping Capabilities,43.67
+Australia, Lack of Adaptive Capacities,16.02
+Saint Lucia,WRI,4.52
+Saint Lucia,Exposure,9.83
+Saint Lucia,Vulnerability,45.96
+Saint Lucia,Susceptibility,23.68
+Saint Lucia,Lack of Coping Capabilities,74.26
+Saint Lucia, Lack of Adaptive Capacities,39.95
+Ireland,WRI,4.49
+Ireland,Exposure,16.68
+Ireland,Vulnerability,26.9
+Ireland,Susceptibility,15.4
+Ireland,Lack of Coping Capabilities,47.66
+Ireland, Lack of Adaptive Capacities,17.65
+Laos,WRI,4.46
+Laos,Exposure,8.01
+Laos,Vulnerability,55.64
+Laos,Susceptibility,32.86
+Laos,Lack of Coping Capabilities,82.91
+Laos, Lack of Adaptive Capacities,51.14
+Kuwait,WRI,4.32
+Kuwait,Exposure,11.9
+Kuwait,Vulnerability,36.28
+Kuwait,Susceptibility,14.12
+Kuwait,Lack of Coping Capabilities,70.09
+Kuwait, Lack of Adaptive Capacities,24.64
+Bahamas,WRI,4.27
+Bahamas,Exposure,11.63
+Bahamas,Vulnerability,36.74
+Bahamas,Susceptibility,17.68
+Bahamas,Lack of Coping Capabilities,58.92
+Bahamas, Lack of Adaptive Capacities,33.63
+Croatia,WRI,4.16
+Croatia,Exposure,12.04
+Croatia,Vulnerability,34.55
+Croatia,Susceptibility,17.36
+Croatia,Lack of Coping Capabilities,63.67
+Croatia, Lack of Adaptive Capacities,22.63
+Bulgaria,WRI,4.16
+Bulgaria,Exposure,11.93
+Bulgaria,Vulnerability,34.9
+Bulgaria,Susceptibility,21.11
+Bulgaria,Lack of Coping Capabilities,58.78
+Bulgaria, Lack of Adaptive Capacities,24.8
+Jordan,WRI,4.11
+Jordan,Exposure,9.24
+Jordan,Vulnerability,44.47
+Jordan,Susceptibility,22.59
+Jordan,Lack of Coping Capabilities,68.26
+Jordan, Lack of Adaptive Capacities,42.56
+Moldova,WRI,4
+Moldova,Exposure,9.63
+Moldova,Vulnerability,41.51
+Moldova,Susceptibility,21.56
+Moldova,Lack of Coping Capabilities,68.87
+Moldova, Lack of Adaptive Capacities,34.1
+United States of America,WRI,3.98
+United States of America,Exposure,13.03
+United States of America,Vulnerability,30.58
+United States of America,Susceptibility,15.92
+United States of America,Lack of Coping Capabilities,54.15
+United States of America, Lack of Adaptive Capacities,21.68
+Botswana,WRI,3.94
+Botswana,Exposure,8.23
+Botswana,Vulnerability,47.86
+Botswana,Susceptibility,32.44
+Botswana,Lack of Coping Capabilities,71.83
+Botswana, Lack of Adaptive Capacities,39.3
+Spain,WRI,3.62
+Spain,Exposure,11.77
+Spain,Vulnerability,30.73
+Spain,Susceptibility,15.86
+Spain,Lack of Coping Capabilities,58.22
+Spain, Lack of Adaptive Capacities,18.11
+Paraguay,WRI,3.56
+Paraguay,Exposure,7.43
+Paraguay,Vulnerability,47.98
+Paraguay,Susceptibility,24.11
+Paraguay,Lack of Coping Capabilities,79.92
+Paraguay, Lack of Adaptive Capacities,39.9
+Russia,WRI,3.53
+Russia,Exposure,9.5
+Russia,Vulnerability,37.21
+Russia,Susceptibility,18.64
+Russia,Lack of Coping Capabilities,65.83
+Russia, Lack of Adaptive Capacities,27.15
+Portugal,WRI,3.52
+Portugal,Exposure,11.6
+Portugal,Vulnerability,30.38
+Portugal,Susceptibility,16.6
+Portugal,Lack of Coping Capabilities,51.49
+Portugal, Lack of Adaptive Capacities,23.04
+Argentina,WRI,3.52
+Argentina,Exposure,9.6
+Argentina,Vulnerability,36.63
+Argentina,Susceptibility,20.35
+Argentina,Lack of Coping Capabilities,60.27
+Argentina, Lack of Adaptive Capacities,29.27
+United Kingdom,WRI,3.51
+United Kingdom,Exposure,12.58
+United Kingdom,Vulnerability,27.92
+United Kingdom,Susceptibility,16.18
+United Kingdom,Lack of Coping Capabilities,48.71
+United Kingdom, Lack of Adaptive Capacities,18.87
+Kazakhstan,WRI,3.48
+Kazakhstan,Exposure,9.34
+Kazakhstan,Vulnerability,37.29
+Kazakhstan,Susceptibility,17.64
+Kazakhstan,Lack of Coping Capabilities,65.09
+Kazakhstan, Lack of Adaptive Capacities,29.15
+Libya,WRI,3.47
+Libya,Exposure,7.37
+Libya,Vulnerability,47.12
+Libya,Susceptibility,22.65
+Libya,Lack of Coping Capabilities,83.76
+Libya, Lack of Adaptive Capacities,34.94
+Slovenia,WRI,3.42
+Slovenia,Exposure,11.4
+Slovenia,Vulnerability,30.04
+Slovenia,Susceptibility,14.87
+Slovenia,Lack of Coping Capabilities,56.15
+Slovenia, Lack of Adaptive Capacities,19.09
+Slovakia,WRI,3.33
+Slovakia,Exposure,10.1
+Slovakia,Vulnerability,32.97
+Slovakia,Susceptibility,14.84
+Slovakia,Lack of Coping Capabilities,59.15
+Slovakia, Lack of Adaptive Capacities,24.93
+Bhutan,WRI,3.25
+Bhutan,Exposure,6.9
+Bhutan,Vulnerability,47.12
+Bhutan,Susceptibility,23.72
+Bhutan,Lack of Coping Capabilities,72.44
+Bhutan, Lack of Adaptive Capacities,45.21
+Cyprus,WRI,3.21
+Cyprus,Exposure,8.97
+Cyprus,Vulnerability,35.78
+Cyprus,Susceptibility,15.24
+Cyprus,Lack of Coping Capabilities,67.63
+Cyprus, Lack of Adaptive Capacities,24.46
+United Arab Emirates,WRI,3.14
+United Arab Emirates,Exposure,10.48
+United Arab Emirates,Vulnerability,29.97
+United Arab Emirates,Susceptibility,9.82
+United Arab Emirates,Lack of Coping Capabilities,54.52
+United Arab Emirates, Lack of Adaptive Capacities,25.57
+South Korea,WRI,3.13
+South Korea,Exposure,11.4
+South Korea,Vulnerability,27.45
+South Korea,Susceptibility,13.36
+South Korea,Lack of Coping Capabilities,48.48
+South Korea, Lack of Adaptive Capacities,20.5
+Poland,WRI,3.07
+Poland,Exposure,9.45
+Poland,Vulnerability,32.46
+Poland,Susceptibility,15.56
+Poland,Lack of Coping Capabilities,59.65
+Poland, Lack of Adaptive Capacities,22.17
+Austria,WRI,3.06
+Austria,Exposure,13.08
+Austria,Vulnerability,23.41
+Austria,Susceptibility,13.87
+Austria,Lack of Coping Capabilities,41
+Austria, Lack of Adaptive Capacities,15.35
+Czechia,WRI,3.06
+Czechia,Exposure,10.76
+Czechia,Vulnerability,28.46
+Czechia,Susceptibility,15.09
+Czechia,Lack of Coping Capabilities,49.48
+Czechia, Lack of Adaptive Capacities,20.8
+Latvia,WRI,3.01
+Latvia,Exposure,8.8
+Latvia,Vulnerability,34.21
+Latvia,Susceptibility,18.9
+Latvia,Lack of Coping Capabilities,60.06
+Latvia, Lack of Adaptive Capacities,23.67
+Mongolia,WRI,2.98
+Mongolia,Exposure,6.91
+Mongolia,Vulnerability,43.09
+Mongolia,Susceptibility,29.02
+Mongolia,Lack of Coping Capabilities,64.44
+Mongolia, Lack of Adaptive Capacities,35.81
+Bahrain,WRI,2.93
+Bahrain,Exposure,7.33
+Bahrain,Vulnerability,39.94
+Bahrain,Susceptibility,15.31
+Bahrain,Lack of Coping Capabilities,76.81
+Bahrain, Lack of Adaptive Capacities,27.71
+Norway,WRI,2.87
+Norway,Exposure,10.84
+Norway,Vulnerability,26.48
+Norway,Susceptibility,13.8
+Norway,Lack of Coping Capabilities,42.79
+Norway, Lack of Adaptive Capacities,22.86
+Canada,WRI,2.81
+Canada,Exposure,10.36
+Canada,Vulnerability,27.1
+Canada,Susceptibility,15.07
+Canada,Lack of Coping Capabilities,47.49
+Canada, Lack of Adaptive Capacities,18.73
+Israel,WRI,2.81
+Israel,Exposure,8.45
+Israel,Vulnerability,33.3
+Israel,Susceptibility,18.51
+Israel,Lack of Coping Capabilities,58.57
+Israel, Lack of Adaptive Capacities,22.83
+Denmark,WRI,2.79
+Denmark,Exposure,11.92
+Denmark,Vulnerability,23.43
+Denmark,Susceptibility,14.9
+Denmark,Lack of Coping Capabilities,40.09
+Denmark, Lack of Adaptive Capacities,15.3
+Ukraine,WRI,2.72
+Ukraine,Exposure,6.92
+Ukraine,Vulnerability,39.36
+Ukraine,Susceptibility,18.83
+Ukraine,Lack of Coping Capabilities,68.43
+Ukraine, Lack of Adaptive Capacities,30.81
+Belgium,WRI,2.71
+Belgium,Exposure,11.41
+Belgium,Vulnerability,23.79
+Belgium,Susceptibility,14.66
+Belgium,Lack of Coping Capabilities,42.49
+Belgium, Lack of Adaptive Capacities,14.22
+Germany,WRI,2.66
+Germany,Exposure,11.51
+Germany,Vulnerability,23.12
+Germany,Susceptibility,15.02
+Germany,Lack of Coping Capabilities,38.35
+Germany, Lack of Adaptive Capacities,16
+Belarus,WRI,2.64
+Belarus,Exposure,8
+Belarus,Vulnerability,32.96
+Belarus,Susceptibility,16.68
+Belarus,Lack of Coping Capabilities,56.36
+Belarus, Lack of Adaptive Capacities,25.84
+São Tomé and Principe,WRI,2.57
+São Tomé and Principe,Exposure,4.54
+São Tomé and Principe,Vulnerability,56.6
+São Tomé and Principe,Susceptibility,45.67
+São Tomé and Principe,Lack of Coping Capabilities,77.23
+São Tomé and Principe, Lack of Adaptive Capacities,46.9
+Oman,WRI,2.54
+Oman,Exposure,6.04
+Oman,Vulnerability,42.02
+Oman,Susceptibility,23.68
+Oman,Lack of Coping Capabilities,66.65
+Oman, Lack of Adaptive Capacities,35.73
+Luxembourg,WRI,2.53
+Luxembourg,Exposure,9.57
+Luxembourg,Vulnerability,26.41
+Luxembourg,Susceptibility,11.86
+Luxembourg,Lack of Coping Capabilities,47.15
+Luxembourg, Lack of Adaptive Capacities,20.23
+France,WRI,2.51
+France,Exposure,9.63
+France,Vulnerability,26.06
+France,Susceptibility,16.68
+France,Lack of Coping Capabilities,45.1
+France, Lack of Adaptive Capacities,16.41
+Singapore,WRI,2.5
+Singapore,Exposure,8.88
+Singapore,Vulnerability,28.1
+Singapore,Susceptibility,10.34
+Singapore,Lack of Coping Capabilities,54.01
+Singapore, Lack of Adaptive Capacities,19.94
+Sweden,WRI,2.25
+Sweden,Exposure,8.8
+Sweden,Vulnerability,25.62
+Sweden,Susceptibility,15.63
+Sweden,Lack of Coping Capabilities,45.43
+Sweden, Lack of Adaptive Capacities,15.81
+Lithuania,WRI,2.18
+Lithuania,Exposure,7.35
+Lithuania,Vulnerability,29.72
+Lithuania,Susceptibility,18.17
+Lithuania,Lack of Coping Capabilities,50.01
+Lithuania, Lack of Adaptive Capacities,20.99
+Switzerland,WRI,2.04
+Switzerland,Exposure,9.01
+Switzerland,Vulnerability,22.68
+Switzerland,Susceptibility,13.97
+Switzerland,Lack of Coping Capabilities,38.92
+Switzerland, Lack of Adaptive Capacities,15.14
+Finland,WRI,2
+Finland,Exposure,8.26
+Finland,Vulnerability,24.24
+Finland,Susceptibility,15.78
+Finland,Lack of Coping Capabilities,41.2
+Finland, Lack of Adaptive Capacities,15.75
+Estonia,WRI,1.99
+Estonia,Exposure,6.51
+Estonia,Vulnerability,30.52
+Estonia,Susceptibility,16.6
+Estonia,Lack of Coping Capabilities,53.61
+Estonia, Lack of Adaptive Capacities,21.35
+Egypt,WRI,1.82
+Egypt,Exposure,3.76
+Egypt,Vulnerability,48.33
+Egypt,Susceptibility,22.22
+Egypt,Lack of Coping Capabilities,83.15
+Egypt, Lack of Adaptive Capacities,39.62
+Island,WRI,1.71
+Island,Exposure,7.14
+Island,Vulnerability,23.95
+Island,Susceptibility,13.99
+Island,Lack of Coping Capabilities,43.2
+Island, Lack of Adaptive Capacities,14.67
+Maldives,WRI,1.69
+Maldives,Exposure,4.18
+Maldives,Vulnerability,40.39
+Maldives,Susceptibility,15.59
+Maldives,Lack of Coping Capabilities,65.82
+Maldives, Lack of Adaptive Capacities,39.76
+Barbados,WRI,1.37
+Barbados,Exposure,3.61
+Barbados,Vulnerability,37.96
+Barbados,Susceptibility,20.66
+Barbados,Lack of Coping Capabilities,60.11
+Barbados, Lack of Adaptive Capacities,33.12
+Grenada,WRI,1.06
+Grenada,Exposure,2.4
+Grenada,Vulnerability,43.98
+Grenada,Susceptibility,26.36
+Grenada,Lack of Coping Capabilities,69.21
+Grenada, Lack of Adaptive Capacities,36.38
+Saudi Arabia,WRI,0.94
+Saudi Arabia,Exposure,2.58
+Saudi Arabia,Vulnerability,36.46
+Saudi Arabia,Susceptibility,13.83
+Saudi Arabia,Lack of Coping Capabilities,68.21
+Saudi Arabia, Lack of Adaptive Capacities,27.34
+St. Vin. and Gren.,WRI,0.7
+St. Vin. and Gren.,Exposure,1.62
+St. Vin. and Gren.,Vulnerability,43
+St. Vin. and Gren.,Susceptibility,28.16
+St. Vin. and Gren.,Lack of Coping Capabilities,69.86
+St. Vin. and Gren., Lack of Adaptive Capacities,30.97
+Malta,WRI,0.69
+Malta,Exposure,2.31
+Malta,Vulnerability,29.96
+Malta,Susceptibility,15.04
+Malta,Lack of Coping Capabilities,54.76
+Malta, Lack of Adaptive Capacities,20.09
+Qatar,WRI,0.3
+Qatar,Exposure,0.85
+Qatar,Vulnerability,34.8
+Qatar,Susceptibility,9.03
+Qatar,Lack of Coping Capabilities,65.03
+Qatar, Lack of Adaptive Capacities,30.34
