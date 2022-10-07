@@ -1,221 +1,293 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "An interactive scatter plot of global health statistics by Region and year.",
-    "data": {"url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_dot3.csv",
-    "format":{"type":"csv",  "parse": {
-      "WRI": "number", "Exposure": "number", "year":"number"
-     }}},
-    "hconcat": [{
-    "width": 500,
-    "height": 400,
-    "layer": [
-      {
-        "transform": [
-          {"filter": {"field": "Region", "equal": "Afghanistan"}},
-          {"filter": {"param": "year"}}
-        ],
-        "mark": {
-          "type": "text",
-          "fontSize": 100,
-          "x": 300,
-          "y": 150,
-          "opacity": 0.06
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "An interactive scatter plot of global health statistics by Region and year.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_dot3.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"WRI": "number", "Exposure": "number", "year": "number"}
+    }
+  },
+  "hconcat": [
+    {
+      "width": 500,
+      "height": 400,
+      "layer": [
+        {
+          "transform": [
+            {"filter": {"field": "Region", "equal": "Afghanistan"}},
+            {"filter": {"param": "year"}}
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 100,
+            "x": 300,
+            "y": 150,
+            "opacity": 0.06
+          },
+          "encoding": {"text": {"field": "year"}}
         },
-        "encoding": {"text": {"field": "year"}}
-      },
-      {
-        
-        "transform": [
-          {
-            "lookup": "Continent",
-            "from": {
-              "key": "id",
-              "fields": ["name"],
-              "data": {
-                "values": [
-                  {"id": 0, "name": "Africas"},
-                  {"id": 1, "name": "Americas"},
-                  {"id": 2, "name": "Asia"},
-                  {"id": 3, "name": "Europe"},
-                  {"id": 4, "name": "Oceania"}
-                ]
-              }
-            }
-          }
-        ],
-        
-        
-        "encoding": {
-          "x": {
-            "field": "WRI",
-            "type": "quantitative",
-            "scale": {"domain": [0, 60]},
-            "axis": {"tickCount": 5, "title": "WRI", "titleFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}
-          },
-          "y": {
-            "field": "Exposure",
-            "type": "quantitative",
-            "scale": {"domain": [0, 100]},
-            "axis": {"tickCount": 5, "title": "Exposure", "titleFontSize":14, "titleFont":"Butler", "labelFont" : "Butler"}
-          }
-        },
-        "layer": [
-          {
-            "mark": {
-              "type": "line",
-              "size": 4,
-              "color": "lightgray",
-              "strokeCap": "round"
-            },
-            "encoding": {
-              "detail": {"field": "Region"},
-              "order": {"field": "year"},
-              "opacity": {
-                "condition": {
-                  "test": {"or": [
-                    {"param": "hovered", "empty": false},
-                    {"param": "clicked", "empty": false}
-                  ]},
-                  "value": 0.8
-                },
-                "value": 0
-              }
-            }
-          },
-
-          {
-            "params": [
-              {
-                "name": "year",
-                "value": [{"year": 2021}],
-                "select": {
-                  "type": "point",
-                  "fields": ["year"]
-                },
-                "bind": {
-                  "name": "Year",
-                  "input": "range",
-                  "min": 2011, "max": 2021, "step": 1
-                }
-              },
-              {
-                "name": "hovered",
-                "select": {
-                  "type": "point",
-                  "fields": ["Region"],
-                  "toggle": false,
-                  "on": "mouseover"
-                }
-              },
-              {
-                "name": "clicked",
-                "select": {"type": "point", "fields": ["Region"]}
-              }],
-            "transform": [{"filter": {"param": "year"}}],
-            
-            "mark": {"type": "circle", "size": 100, "opacity": 0.9},
-            
-            "encoding": {"color": {"field": "name", "title": "Continent", "legend":{"titleFontSize":18,"labelFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}}}
-          },
-          {
-            "transform": [
-              
-              {
-                "filter": {
-                  "and": [
-                    {"param": "year"},
-                    {"or": [
-                      {"param": "clicked", "empty": false},
-                      {"param": "hovered", "empty": false}
-                    ]}
+        {
+          "transform": [
+            {
+              "lookup": "Continent",
+              "from": {
+                "key": "id",
+                "fields": ["name"],
+                "data": {
+                  "values": [
+                    {"id": 0, "name": "Africas"},
+                    {"id": 1, "name": "Americas"},
+                    {"id": 2, "name": "Asia"},
+                    {"id": 3, "name": "Europe"},
+                    {"id": 4, "name": "Oceania"}
                   ]
                 }
               }
-            ],
-            "params": [{
-              "name": "zoom",
-              "select": "interval",
-              "bind": "scales"
-            }],
-            "mark": {
-              "type": "text",
-              "yOffset": -12,
-              "fontSize": 12,
-              "fontWeight": "bold"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "WRI",
+              "type": "quantitative",
+              "scale": {"domain": [0, 60]},
+              "axis": {
+                "tickCount": 5,
+                "title": "WRI",
+                "titleFontSize": 14,
+                "titleFont": "Butler",
+                "labelFont": "Butler"
+              }
             },
-            "encoding": {
-              "text": {"field": "Region"},
-              "color": {"field": "name", "title": "Continent"}
+            "y": {
+              "field": "Exposure",
+              "type": "quantitative",
+              "scale": {"domain": [0, 100]},
+              "axis": {
+                "tickCount": 5,
+                "title": "Exposure",
+                "titleFontSize": 14,
+                "titleFont": "Butler",
+                "labelFont": "Butler"
+              }
             }
           },
-          {
-            "transform": [
-              {"filter": {"param": "hovered", "empty": false}},
-              {"filter": {"not": {"param": "year"}}}
-            ],
-            "layer": [
-              {
-                "mark": {
-                  "type": "text",
-                  "yOffset": -12,
-                  "fontSize": 12,
-                  "color": "gray"
-                },
-                "encoding": {"text": {"field": "year"}}
+          "layer": [
+            {
+              "mark": {
+                "type": "line",
+                "size": 4,
+                "color": "lightgray",
+                "strokeCap": "round"
               },
-              {"mark": {"type": "circle", "color": "gray"}}
-            ]
-          }
-        ]
-      }
-    ]},
+              "encoding": {
+                "detail": {"field": "Region"},
+                "order": {"field": "year"},
+                "opacity": {
+                  "condition": {
+                    "test": {
+                      "or": [
+                        {"param": "hovered", "empty": false},
+                        {"param": "clicked", "empty": false}
+                      ]
+                    },
+                    "value": 0.8
+                  },
+                  "value": 0
+                }
+              }
+            },
+            {
+              "params": [
+                {
+                  "name": "year",
+                  "value": [{"year": 2021}],
+                  "select": {"type": "point", "fields": ["year"]},
+                  "bind": {
+                    "name": "Year",
+                    "input": "range",
+                    "min": 2011,
+                    "max": 2021,
+                    "step": 1
+                  }
+                },
+                {
+                  "name": "hovered",
+                  "select": {
+                    "type": "point",
+                    "fields": ["Region"],
+                    "toggle": false,
+                    "on": "mouseover"
+                  }
+                },
+                {
+                  "name": "clicked",
+                  "select": {"type": "point", "fields": ["Region"]}
+                }
+              ],
+              "transform": [{"filter": {"param": "year"}}],
+              "mark": {"type": "circle", "size": 100, "opacity": 0.9},
+              "encoding": {
+                "color": {
+                  "field": "name",
+                  "title": "Continent",
+                  "legend": {
+                    "titleFontSize": 18,
+                    "labelFontSize": 14,
+                    "titleFont": "Butler",
+                    "labelFont": "Butler"
+                  }
+                }
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": {
+                    "and": [
+                      {"param": "year"},
+                      {
+                        "or": [
+                          {"param": "clicked", "empty": false},
+                          {"param": "hovered", "empty": false}
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "params": [
+                {"name": "zoom", "select": "interval", "bind": "scales"}
+              ],
+              "mark": {
+                "type": "text",
+                "yOffset": -12,
+                "fontSize": 12,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "text": {"field": "Region"},
+                "color": {"field": "name", "title": "Continent"}
+              }
+            },
+            {
+              "transform": [
+                {"filter": {"param": "hovered", "empty": false}},
+                {"filter": {"not": {"param": "year"}}}
+              ],
+              "layer": [
+                {
+                  "mark": {
+                    "type": "text",
+                    "yOffset": -12,
+                    "fontSize": 12,
+                    "color": "gray"
+                  },
+                  "encoding": {"text": {"field": "year"}}
+                },
+                {"mark": {"type": "circle", "color": "gray"}}
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "width": 500,
-      "height":400,
-    "layer":[{
-    "encoding": {
-      "x": {"title": "Year", "field": "year", "type": "nominal","axis":{"titleFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}},
-      "y": {"title": "WRI", "aggregate": "average", "field": "WRI", "scale": {"domain": [0,60]}, "axis":{"titleFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}}
-    },
-    "mark": {"type": "line"},
-    "transform": [{"filter": {"param": "clicked"}}]
-    
-  },
-  {"encoding": {
-    "color":{"value":"red"},
-  "x": {"title": "Year", "field": "year", "type": "nominal","axis":{"titleFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}},
-  "y": {"title": "WRI", "aggregate": "average", "field": "WRI", "scale": {"domain": [0,60]},"axis":{"titleFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}},
-  "tooltip":
-  [{"title":"Year", "field":"year", "type": "nominal"},
-  {"title":"WRI", "field": "WRI", "aggregate":"average", "type": "quantitative", "format":".2f"}]
-},
-
-"mark": {"type": "point"},
-"transform": [{"filter": {"param": "clicked"}}]
-},
-{
-  "transform": [
-    {
-      "filter": {
-        "and": [
-          {"param": "year"},
-          {"or": [
-            {"param": "clicked", "empty": false},
-            {"param": "hovered", "empty": false}
-          ]}
-        ]
-      }
+      "height": 400,
+      "layer": [
+        {
+          "encoding": {
+            "x": {
+              "title": "Year",
+              "field": "year",
+              "type": "nominal",
+              "axis": {
+                "titleFontSize": 14,
+                "titleFont": "Butler",
+                "labelFont": "Butler"
+              }
+            },
+            "y": {
+              "title": "WRI",
+              "aggregate": "average",
+              "field": "WRI",
+              "scale": {"domain": [0, 60]},
+              "axis": {
+                "titleFontSize": 14,
+                "titleFont": "Butler",
+                "labelFont": "Butler"
+              }
+            }
+          },
+          "mark": {"type": "line"},
+          "transform": [{"filter": {"param": "clicked"}}]
+        },
+        {
+          "encoding": {
+            "color": {"value": "red"},
+            "x": {
+              "title": "Year",
+              "field": "year",
+              "type": "nominal",
+              "axis": {
+                "titleFontSize": 14,
+                "titleFont": "Butler",
+                "labelFont": "Butler"
+              }
+            },
+            "y": {
+              "title": "WRI",
+              "aggregate": "average",
+              "field": "WRI",
+              "scale": {"domain": [0, 60]},
+              "axis": {
+                "titleFontSize": 14,
+                "titleFont": "Butler",
+                "labelFont": "Butler"
+              }
+            },
+            "tooltip": [
+              {"title": "Year", "field": "year", "type": "nominal"},
+              {
+                "title": "WRI",
+                "field": "WRI",
+                "aggregate": "average",
+                "type": "quantitative",
+                "format": ".2f"
+              }
+            ]
+          },
+          "mark": {"type": "point"},
+          "transform": [{"filter": {"param": "clicked"}}]
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "and": [
+                  {"param": "year"},
+                  {
+                    "or": [
+                      {"param": "clicked", "empty": false},
+                      {"param": "hovered", "empty": false}
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "y": 20,
+            "yOffset": 100,
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "opacity": 0.5
+          },
+          "encoding": {"text": {"field": "Region"}}
+        }
+      ]
     }
-  ],
-  "mark": {
-    "type": "text",
-    "y":20,
-    "yOffset": 100,
-    "fontSize": 20,
-    "fontWeight": "bold",
-    "opacity":0.5
-  },
-  "encoding": {
-    "text": {"field": "Region"}
-  }
-}]}]}
+  ]
+}
