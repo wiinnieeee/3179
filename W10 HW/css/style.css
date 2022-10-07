@@ -1,1 +1,76 @@
 
+
+@font-face {
+	font-family: DMSerif;
+	src: url(DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+	font-family: Butler;
+	src: url(Butler.ttf);
+}
+
+
+#choropleth_map {
+	left: 200px;
+	right: 200px;
+}
+
+
+#desc2 {
+	font-size: 20px;
+    font-family: Butler;
+	padding-bottom:0px;
+	padding-left: 50px;
+}
+
+#multiview_dot {
+	left: 150px;
+}
+
+h1 {
+	padding-top: 30px;
+    font-size: 60px;
+    font-family: DMSerif;
+    text-align: center;
+	line-height: 0px;
+}
+
+#subheader {
+	line-height: 20px;
+    font-size: 20px;
+    font-family: Butler;
+    text-align: center;
+	padding-bottom:15px;
+}
+
+p{
+    font-size: 18px;
+    font-family: Butler;
+    text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom:40px;
+}
+
+h2{
+	display: inline;
+	font-size: 30px;
+    font-family: Butler;
+	padding-left: 50px;
+	font-weight: bold;
+	line-height: 0px;
+	padding-bottom:0px;
+	padding-top:80px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
