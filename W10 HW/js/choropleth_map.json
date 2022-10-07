@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "World Disaster Risks Dataset",
+    "title": {"font": "Butler", "text": "World Disaster Risks Globally"},
     "width": 1100,
     "height": 500,
     "projection": {"type": "equalEarth"},

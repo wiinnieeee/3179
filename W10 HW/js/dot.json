@@ -115,7 +115,7 @@
             
             "mark": {"type": "circle", "size": 100, "opacity": 0.9},
             
-            "encoding": {"color": {"field": "name", "title": "Continent", "legend":{"titleFontSize":18,"labelFontSize":14}}}
+            "encoding": {"color": {"field": "name", "title": "Continent", "legend":{"titleFontSize":18,"labelFontSize":14, "titleFont":"Butler","labelFont" : "Butler"}}}
           },
           {
             "transform": [
