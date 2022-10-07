@@ -1,0 +1,87 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "World Disaster Risks Dataset",
+    "width": 1100,
+    "height": 500,
+    "projection": {"type": "equalEarth"},
+    "params": [
+        {
+        "name": "Year_selection",
+        "value": 2021,
+        "bind": {
+        "input": "range",
+        "min": 2011,
+        "max": 2021,
+        "step": 1,
+        "name": "Year: "
+        }
+        }],
+    "layer":[
+        {
+    "data": {
+      "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+      "format": {"type": "topojson", "feature": "oceans"}
+    },
+    "mark": {"type": "geoshape", "fill": "skyblue"}
+     },    
+    {
+      "data": {
+      "url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/js/ne_50m_graticules_30.json",
+      "format": {"type": "topojson", "feature": "ne_50m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    },
+        {
+    "data": {
+    "url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/js/ne_50m_admin_0_sovereignty.json",
+    "format": {"type": "topojson", "feature": "ne_50m_admin_0_sovereignty"}
+    },
+    "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+        "data": {
+            "url":
+            "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index.csv"
+            },
+            "transform": [
+            {
+            "lookup": "Region",
+            "from": {
+            "data": {
+            "url":
+            "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/js/ne_50m_admin_0_sovereignty.json",
+            "format": {
+            "type": "topojson",
+            "feature": "ne_50m_admin_0_sovereignty"
+            }
+            },
+            "key": "properties.NAME"
+            },
+            "as": "geo"
+            },
+            {"filter": "datum.Year == Year_selection"}
+            ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+            "field": "WRI",
+            "type": "quantitative",
+            "scale": {
+                "type": "threshold",
+                "domain": [5, 10, 30],
+                "range": ["#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"]
+                }
+                
+            },
+        "tooltip": [
+            {"field": "Region", "type": "nominal", "title":"Region"},
+            {"field": "WRI", "type": "quantitative"}
+        ]
+        
+        }
+    }
+        ]
+
+        }
+    
