@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    
+    <title>World Disaster Risk</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+    </head>
+
+<body>
+    <h1>WORLD DISASTER RISK</h1>
+    <p id = "subheader"> From 2010 to 2021</p>
+    <hr>
+    <p>Disasters are sudden events that always cause widespread destruction, major damage or loss of life, either done by forces of nature or human beings.
+      Disasters happen frequently across the globe, from small sovereigns to major countries. In WorldRiskReport, several indicators are used to determine the disaster risks for countries and regions worldwide.
+      The higher the World Risk Index (WRI) of the country, the higher its national disaster risks.</p>
+      <h2>OVERVIEW</h2>
+      <p id="desc2"> WRI of countries across the world over selected year</p>
+      <div id="choropleth_map">
+        <script type="text/javascript">
+          var spec1 = "js/choropleth_map.json";
+          vegaEmbed('#choropleth_map', spec1).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+      </div>
+    <br>
+    <br>
+    <br>
+      <br>
+      <h2>INTERACTIVE</h2>
+      <p id="desc2">The multiview presentation below shows the correlation between WRI and Exposure over all countries in a specific year filtered below.
+        To see the details of the trend of WRI, click on the points which resembles the countries.
+      </p>
+      <div id="multiview_dot">
+        <script type="text/javascript">
+          var spec3 = "js/dot.json";
+          vegaEmbed('#multiview_dot', spec3).then(function(result) {
+             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+      </div>
+</body>
+</html>
