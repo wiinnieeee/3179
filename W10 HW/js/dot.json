@@ -6,7 +6,7 @@
       "WRI": "number", "Exposure": "number", "year":"number"
      }}},
     "hconcat": [{
-    "width": 400,
+    "width": 500,
     "height": 400,
     "layer": [
       {
@@ -170,7 +170,7 @@
       }
     ]},
     {
-      "width": 400,
+      "width": 500,
       "height":400,
     "layer":[{
     "encoding": {
