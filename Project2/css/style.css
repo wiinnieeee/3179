@@ -1,12 +1,165 @@
-#choropleth_map {
-	left: 325px;
-	right: 325px;
-	height: 1000px;
-	width: 800px;
+@font-face {
+	font-family: DMSerif;
+	src: url(DMSerifDisplay-Regular.ttf);
 }
 
-h1 {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+@font-face {
+	font-family: Butler;
+	src: url(Butler.ttf);
 }
+
+@font-face {
+	font-family: Roboto;
+	src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: Montserrat_Reg;
+	src: url(Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: Montserrat_Bold;
+	src: url(Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: Roboto_Thin;
+	src: url(Roboto-Thin.ttf);
+}
+
+#choropleth_map {
+	left: 200px;
+	right: 200px;
+}
+
+#bumpchart 
+{padding-left: 50px;}
+
+
+#scatterplot {
+	padding-left: 75px;
+}
+
+#red {
+	color: #de2d26;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+#low {
+	color: #fcae91;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+#veryhigh {
+	color: #a50f15;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+#bold {font-size: 20px;
+	font-weight: bold;
+	}
+
+#desc2 {
+	font-size: 18px;
+    font-family: Roboto;
+	padding-bottom: 0px;
+	padding-left: 50px;
+	margin-top: 10px;
+}
+
+#heat_map {
+	padding-left: 50px;
+}
+
+#dot_multi {
+	padding-left: 50px;
+	left: 150px;
+	right: 100px;
+}
+
+#oceania {
+	color: #ffb55a;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+#africas {
+	color: #fd7f6f;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+#europe {
+	color: #bd7ebe;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+#line{
+	left:40px;
+}
+
+#radar{
+	left: 250px;
+}
+
+
+
+h1 {
+	padding-top: 30px;
+    font-size: 60px;
+    font-family: Montserrat_Bold;
+    text-align: center;
+	line-height: 0px;
+}
+
+#subheader {
+	line-height: 20px;
+    font-size: 20px;
+    font-family: Montserrat_Reg;
+    text-align: center;
+	padding-bottom:15px;
+	font-style: italic;
+}
+
+p{
+    font-size: 18px;
+	font-family: Roboto;
+    text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom:40px;
+}
+
+h2{
+	display: inline;
+	font-size: 40px;
+	font-family: Montserrat_Bold;
+	padding-left: 50px;
+	font-weight: bold;
+	padding-bottom:0px;
+	padding-top:70px;
+	line-height: 5px;
+	margin-bottom: 0px;
+}
+
+.column {
+    float: left;
+    width: 48%;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
