@@ -8,8 +8,8 @@
     },  
     
     "spec": {
-        "width":175,
-        "height":150,
+        "width":150,
+        "height":120,
         "params": [{
           "name": "brush",
           "select": {"type": "interval", "resolve": "global"}
