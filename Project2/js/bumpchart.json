@@ -1,0 +1,104 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
+  "description": "thickness is not a channel since you shouldn't do ticks with varying thickness.",
+
+  "title": {"text": "Countries with Top N WRI from 2011 to 2021", "font":"Roboto"},
+	"width": 600, "height": 400,
+    "data": {"url":"https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_heatmap.csv",
+    "format":{"type":"csv",  "parse": {
+        "WRI": "number"
+       }}},
+	"params": [
+		{ "name": "top_n", "value": 5 ,
+			"bind": {"input": "range", "min": 1, "max": 20, "step": 1 }
+		}
+	],
+
+	"transform": [{
+    "sort": [
+      {"field": "WRI", "order": "descending"}
+		],
+		"window": [{
+		  "op": "rank",
+		  "as": "rank"
+		}],
+		"groupby": ["Year"]
+	  },
+			{ "filter": "datum.rank <= top_n" }
+	  ],
+
+		"encoding": {
+      "x": {  "field": "Year",
+            "type": "ordinal" ,
+            "sort": ["2011", "2012", "2013", "2014","2015", "2016", "2017", "2018", "2019", "2020", "2021"] ,
+            "axis": { "labelAngle": 0 , "labelFontSize": 12 , "titleFontSize": 14, "title": "Year", 
+            "titleFont":"Roboto", 
+            "labelFont":"Roboto"}
+            } ,
+      "y": {  "field": "rank",
+              "type": "quantitative",
+              "sort": "descending",
+              "scale": {"domain": [0.5, {"expr": "top_n+0.5"} ]},
+              "axis": { "labelAngle": 0 , "labelFontSize": 12 ,
+                        "tickMinStep": 1 ,
+                        "tickCount": {"expr": "top_n"},
+                        "titleFontSize": 14, 
+                        "title": "WRI Ranking", 
+                        "titleFont":"Roboto", 
+                        "labelFont":"Roboto"}}
+            },
+            
+
+	"layer": [
+     {
+		"mark": {"type": "line", "interpolate": "monotone" },
+		"encoding": {
+			"color": { "field": "Region", 
+            "legend":null, 
+            "scale":{"scheme": "category20"}} ,
+      "size":{
+          "condition":  {"param": "sel_brand_leg", "empty": false, "value": 3},
+          "value": 1
+        }
+		}
+	},
+	{
+    "params": [
+      { "name": "sel_brand_leg", "select": {"type": "point" ,  "on": "click",  "fields": ["Region"]},
+        "bind": "legend"
+      }
+    ],
+		"mark": {"type" :"tick", "thickness": 7 },
+		"encoding": {
+			"color": {
+          "condition":  {"param": "sel_brand_leg", "empty": false, "value": "black"} ,
+          "field": "Region"
+      }
+		}
+
+	},
+    {
+        "params": [{
+            "name": "clicked",
+            "select": {"type": "point", "fields": ["Region"]}
+          }],
+        "transform": [{"filter":{"param": "clicked", "empty": false}}],
+        "mark": {
+            "type": "text",
+            "yOffset": -12,
+            "fontSize": 10,
+            "fontStyle": "bold",
+            "font":"Roboto"
+          },
+            "encoding": {
+                "text": {"field": "Region"},
+                "tooltip":[{"field":"Region", "type": "nominal"},
+                {"field":"Year", "type": "ordinal"},
+                {"field":"WRI", "type": "quantitative"},
+                {"field":"rank", "type": "quantitative"}]
+            }
+    
+        }
+]
+
+  }
+

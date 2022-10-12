@@ -1,0 +1,170 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 400,
+  "height": 400,
+  "autosize":"none",
+  "signals": [
+    {"name": "radius", "update": "width / 2"},
+      {"name": "reg_select",
+      "bind": {
+        "input": "select",
+        "options": [null, "Vanuatu", "Solomon Is.", "Tonga", "Dominica", "Antigua and Barb.", "Brunei", "Guyana", "Philippines", "Papua New Guinea", "Guatemala", "Cabo Verde", "Costa Rica", "Bangladesh", "Fiji", "Cambodia", "Timor-Leste", "Djibouti", "El Salvador", "Kiribati", "Comoros", "Haiti", "Nicaragua", "Niger", "Guinea-Bissau", "Cameroon", "Nigeria", "Uruguay", "Gambia", "Jamaica", "Chad", "Benin", "Dominican Rep.", "Chile", "Honduras", "Burkina Faso", "Togo", "Mali", "Indonesia", "Madagascar", "Burundi", "Kenya", "Angola", "Vietnam", "Côte d'Ivoire", "Senegal", "Japan", "Sierra Leone", "Ghana", "Zimbabwe", "Mozambique", "Mauritius", "Tanzania", "Malawi", "Liberia", "Ecuador", "Dem. Rep. Congo", "Trinidad and Tobago", "Guinea", "Uganda", "Sudan", "Albania", "Mauritania", "Afghanistan", "Belize", "Venezuela", "Netherlands", "Ethiopia", "Uzbekistan", "eSwatini", "Panama", "Malaysia", "Zambia", "Algeria", "Central African Rep.", "Sri Lanka", "Rwanda", "Suriname", "Eq. Guinea", "Kyrgyzstan", "Myanmar", "Micronesia", "Greece", "Eritrea", "Congo", "Pakistan", "Montenegro", "Peru", "Colombia", "Lesotho", "India", "Gabon", "Thailand", "South Africa", "Mexico", "China", "Namibia", "Tunisia", "Turkmenistan", "Tajikistan", "North Macedonia", "Morocco", "Azerbaijan", "Syria", "Iraq", "Cuba", "Yemen", "Romania", "Georgia", "Samoa", "Lebanon", "Serbia", "Armenia", "Turkey", "Hungary", "Iran", "Brazil", "New Zealand", "Seychelles", "Italy", "Bolivia", "Bosnia and Herz.", "Nepal", "Australia", "Saint Lucia", "Ireland", "Laos", "Kuwait", "Bahamas", "Croatia", "Bulgaria", "Jordan", "Moldova", "United States of America", "Botswana", "Spain", "Paraguay", "Russia", "Portugal", "Argentina", "United Kingdom", "Kazakhstan", "Libya", "Slovenia", "Slovakia", "Bhutan", "Cyprus", "United Arab Emirates", "South Korea", "Poland", "Austia", "Czechia", "Latvia", "Mongolia", "Bahrain", "Norway", "Canada", "Israel", "Denmark", "Ukraine", "Belgium", "Germany", "Belarus", "São Tomé and Principe", "Oman", "Luxembourg", "France", "Singapore", "Sweden", "Lithuania", "Switzerland", "Finland", "Estonia", "Egypt", "Iceland", "Maldives", "Barbados", "Grenada", "Saudi Arabia", "St. Vin. and Gren.", "Malta", "Qatar"],
+        "labels": ["Show All", "Vanuatu", "Solomon Is.", "Tonga", "Dominica", "Antigua and Barb.", "Brunei", "Guyana", "Philippines", "Papua New Guinea", "Guatemala", "Cabo Verde", "Costa Rica", "Bangladesh", "Fiji", "Cambodia", "Timor-Leste", "Djibouti", "El Salvador", "Kiribati", "Comoros", "Haiti", "Nicaragua", "Niger", "Guinea-Bissau", "Cameroon", "Nigeria", "Uruguay", "Gambia", "Jamaica", "Chad", "Benin", "Dominican Rep.", "Chile", "Honduras", "Burkina Faso", "Togo", "Mali", "Indonesia", "Madagascar", "Burundi", "Kenya", "Angola", "Vietnam", "Côte d'Ivoire", "Senegal", "Japan", "Sierra Leone", "Ghana", "Zimbabwe", "Mozambique", "Mauritius", "Tanzania", "Malawi", "Liberia", "Ecuador", "Dem. Rep. Congo", "Trinidad and Tobago", "Guinea", "Uganda", "Sudan", "Albania", "Mauritania", "Afghanistan", "Belize", "Venezuela", "Netherlands", "Ethiopia", "Uzbekistan", "eSwatini", "Panama", "Malaysia", "Zambia", "Algeria", "Central African Rep.", "Sri Lanka", "Rwanda", "Suriname", "Eq. Guinea", "Kyrgyzstan", "Myanmar", "Micronesia", "Greece", "Eritrea", "Congo", "Pakistan", "Montenegro", "Peru", "Colombia", "Lesotho", "India", "Gabon", "Thailand", "South Africa", "Mexico", "China", "Namibia", "Tunisia", "Turkmenistan", "Tajikistan", "North Macedonia", "Morocco", "Azerbaijan", "Syria", "Iraq", "Cuba", "Yemen", "Romania", "Georgia", "Samoa", "Lebanon", "Serbia", "Armenia", "Turkey", "Hungary", "Iran", "Brazil", "New Zealand", "Seychelles", "Italy", "Bolivia", "Bosnia and Herz.", "Nepal", "Australia", "Saint Lucia", "Ireland", "Laos", "Kuwait", "Bahamas", "Croatia", "Bulgaria", "Jordan", "Moldova", "United States of America", "Botswana", "Spain", "Paraguay", "Russia", "Portugal", "Argentina", "United Kingdom", "Kazakhstan", "Libya", "Slovenia", "Slovakia", "Bhutan", "Cyprus", "United Arab Emirates", "South Korea", "Poland", "Austia", "Czechia", "Latvia", "Mongolia", "Bahrain", "Norway", "Canada", "Israel", "Denmark", "Ukraine", "Belgium", "Germany", "Belarus", "São Tomé and Principe", "Oman", "Luxembourg", "France", "Singapore", "Sweden", "Lithuania", "Switzerland", "Finland", "Estonia", "Egypt", "Iceland", "Maldives", "Barbados", "Grenada", "Saudi Arabia", "St. Vin. and Gren.", "Malta", "Qatar"],
+        "name": "Region: "
+      }
+      
+  }
+  ],
+  "data": [
+    {
+      "name": "table",
+      "url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_radar.csv",
+      "format":{"type":"csv", "delimiter":","},
+      "transform": [
+          { "type": "filter", "expr": "reg_select == null || datum.region == reg_select" }
+        ]
+    },
+    {
+      "name": "keys",
+      "source": "table",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": ["key"]
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "angular",
+      "type": "point",
+      "range": {"signal": "[-PI, PI]"},
+      "padding": 0.5,
+      "domain": {"data": "table", "field": "key"}
+    },
+    {
+      "name": "radial",
+      "type": "linear",
+      "range": {"signal": "[0, radius]"},
+      "zero": true,
+      "nice": false,
+      "domain": {"data": "table", "field": "value"},
+      "domainMin": 0
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "region"},
+      "range": {"scheme": "orangered"}
+    }
+  ],
+
+  "encode": {
+    "enter": {
+      "x": {"signal": "radius"},
+      "y": {"signal": "radius"}
+    }
+  },
+
+  "marks": [
+    {
+      "type": "text",
+      "name": "key-label",
+      "from": {"data": "keys"},
+      "zindex": 1,
+      "encode": {
+        "enter": {
+          "x": {"signal": "(radius-1) * cos(scale('angular', datum.key))"},
+          "y": {"signal": "(radius-1) * sin(scale('angular', datum.key))"},
+          "text": {"field": "key"},
+          "align": [
+            {
+              "test": "abs(scale('angular', datum.key)) > PI / 2",
+              "value": "left",
+              "padding":20
+            },
+            {
+              "value": "center"
+            }
+          ],
+          "baseline": [
+            {
+              "test": "scale('angular', datum.key) > 0", "value": "bottom"
+            },
+            {
+              "test": "scale('angular', datum.key) == 0", "value": "top"
+            },
+            {
+              "value": "top"
+            }
+          ],
+          "fill": {"value": "black"},
+          "fontWeight":{"value": "bold"},
+          "fontSize":{"value": 12},
+          "font":{"value": "Roboto"},
+          "dx":{"value": -20}
+        }
+      }
+    },
+    {
+      "type": "group",
+      "name": "categories",
+      "zindex": 1,
+      "from": {
+        "facet": {"data": "table", "name": "facet", "groupby": ["region"]}
+      },
+      "marks": [
+        {
+          "type": "line",
+          "name": "category-line",
+          "from": {"data": "facet"},
+          "encode": {
+            "enter": {
+              "interpolate": {"value": "linear-closed"},
+              "x": {"signal": "scale('radial', datum.value) * cos(scale('angular', datum.key))"},
+              "y": {"signal": "scale('radial', datum.value) * sin(scale('angular', datum.key))"},
+              "stroke": {"scale": "color", "field": "region"},
+              "strokeWidth": {"value": 1},
+              "fill": {"scale": "color", "field": "region"},
+              "fillOpacity": {"value": 0.1}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "name": "radial-grid",
+      "from": {"data": "keys"},
+      "zindex": 0,
+      "encode": {
+        "enter": {
+          "x": {"value": 0},
+          "y": {"value": 0},
+          "x2": {"signal": "radius * cos(scale('angular', datum.key))"},
+          "y2": {"signal": "radius * sin(scale('angular', datum.key))"},
+          "stroke": {"value": "lightgray"},
+          "strokeWidth": {"value": 1}
+        }
+      }
+    },
+    
+    {
+      "type": "line",
+      "name": "outer-line",
+      "from": {"data": "radial-grid"},
+      "encode": {
+        "enter": {
+          "interpolate": {"value": "linear-closed"},
+          "x": {"field": "x2"},
+          "y": {"field": "y2"},
+          "stroke": {"value": "lightgray"},
+          "strokeWidth": {"value": 1}
+        }
+      }
+    }
+  ],
+  "opacity": { "value": 0.6},
+  "config": {"text":{"font": "Roboto"}}
+}

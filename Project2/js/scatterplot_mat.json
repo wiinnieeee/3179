@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text":"Correlation between each parameters worldwide each year","font":"Roboto"},
+    "data": {"url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_mat.csv"},
+    "repeat": {
+      "row": ["WRI", "Exposure", "Vulnerability","Susceptibility","Lack of Coping Capabilities"	,"Lack of Adaptive Capacities"],
+      "column": ["Lack of Adaptive Capacities", "Lack of Coping Capabilities", "Susceptibility", "Vulnerability", "Exposure", "WRI"]
+    },  
+    
+    "spec": {
+        "width":175,
+        "height":150,
+        "params": [{
+          "name": "brush",
+          "select": {"type": "interval", "resolve": "global"}
+        },
+        {
+            "name": "year",
+            "select": {"type": "point", "fields": ["Year"]},
+            "bind": "legend"
+          }
+   ],
+    "mark": "point",   
+    "encoding": {
+        "x": {"field": {"repeat": "column"}, "type": "quantitative", "axis": {"labelFont":"Roboto", "titleFont":"Roboto"}},
+        "y": {
+          "field": {"repeat": "row"},
+          "type": "quantitative",
+          "axis": {"minExtent": 30, "labelFont":"Roboto", "titleFont":"Roboto"}
+        },
+        "color": {
+          "condition": {
+            "param": "brush",
+            "field": "Year",
+            "type": "nominal",
+            "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12},
+            "scale": {
+                "scheme": "magma"
+                }
+          },
+          "value": "grey"
+        },
+        "opacity": {
+            "condition": {"param": "year", "value": 1},
+            "value": 0.005
+      }
+    }
+}
+}

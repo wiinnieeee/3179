@@ -1,0 +1,111 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Correlation between each parameters worldwide each year",
+    
+  "data": {
+    "url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_mat.csv"
+  },
+  "transform": [
+    {"window": [{"op": "count", "as": "index"}]},
+    {"fold": ["Exposure", "Vulnerability","Susceptibility","Lack of Coping Capabilities"	,"Lack of Adaptive Capacities"]},
+    {"filter": "Year_select == null || datum.Year == Year_select"},
+
+    {
+      "window": [{
+        "op": "rank",
+        "field": "WRI",
+        "as": "rank"
+      }],
+      "sort": [{ "field": "WRI", "order": "descending" }],
+      "groupby": ["Year"]},
+      {
+      "filter": "datum.rank <= 50"},
+      {"joinaggregate": [
+        {"op": "min", "field": "value", "as": "min"},
+        {"op": "max", "field": "value", "as": "max"}
+      ],
+      "groupby": ["key"]},
+    {
+      "calculate": "(datum.value - datum.min) / (datum.max-datum.min)",
+      "as": "norm_val"
+    },
+    {
+      "calculate": "(datum.min + datum.max) / 2",
+      "as": "mid"
+    }
+  ],
+  
+  "params": [
+    {
+    "name": "Year_select",
+    "bind": {
+    "input": "select",
+    "options": [
+    null,
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+    ],
+    "labels":[
+    "Show All",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+    ],
+    "name": "Year Selection: "
+    }
+    }
+    ],
+  "mark": "line",
+  "encoding": {
+    "color": {"type": "nominal", "field": "Year",
+    "scale": {
+      "domain": [
+        "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+        ],
+      "scheme": "magma"
+      },
+      "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12, "symbolStrokeWidth":3}
+    },
+    "detail": {"type": "nominal", "field": "index"},
+    "opacity": {"value": 0.7},
+    "x": {"type": "nominal", "field": "key", "axis": { "labelAngle": 20,"labelFontSize": 12 ,
+    "titleFontSize": 14, 
+    "title": "Attributes", 
+    "titleFont":"Roboto", 
+    "labelFont":"Roboto"}},
+    "y": {"type": "quantitative", "field": "value", "axis": { "labelFontSize": 12 ,
+    "titleFontSize": 14, 
+    "title": "Index Score Given", 
+    "titleFont":"Roboto", 
+    "labelFont":"Roboto"}}
+  },
+  "width": 600,
+  "height": 400
+}

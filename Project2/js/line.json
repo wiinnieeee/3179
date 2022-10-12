@@ -1,0 +1,96 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_corr.csv"
+    },
+    "params": [
+        {
+        "name": "Attribute_selection",
+        "value":"Exposure",
+        "bind": {
+        "input": "select",
+        "options": [
+        "Exposure", "Vulnerability","Susceptibility","Lack of Coping Capabilities"	,"Lack of Adaptive Capacities"
+        ],
+        "labels":[
+        "Exposure", "Vulnerability","Susceptibility","Lack of Coping Capabilities"	,"Lack of Adaptive Capacities"
+        ],
+        "name": "Attribute Selection: "
+        }
+        }
+        ],
+    "transform": [{"filter": "Attribute_selection == null || datum.Attribute== Attribute_selection"}],
+    "width": 600,
+    "height": 400,
+    "layer": [
+      {
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal", "axis": {"title": "Year", "labelAngle":30, "titleFont":"Roboto", "labelFont":"Roboto", "titleFontSize":15,"labelFontSize":12}},
+          "y": {"field": "Value", "type": "quantitative", "axis": {"title": "Attribute Index Score", "titleFont":"Roboto", "labelFont":"Roboto", "titleFontSize":15,"labelFontSize":12}},
+          "color": {"field": "Continent", "type": "nominal", "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a"]}}
+        },
+        "layer": [
+          {"mark": "line"},
+          {
+            "params": [{
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }],
+            "mark": "point",
+            "encoding": {
+              "opacity": {
+                "condition": {
+                  "param": "label",
+                  "empty": false,
+                  "value": 1
+                },
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "transform": [{"filter": {"param": "label", "empty": false}}],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "lightgray"},
+            "encoding": {
+              "x": {"type": "ordinal", "field": "Year"}
+            }
+          },
+          {
+            "encoding": {
+              "text": {"type": "quantitative", "field": "Value", "format": ".2f"},
+              "x": {"type": "ordinal", "field": "Year"},
+              "y": {"type": "quantitative", "field": "Value"}
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": 5,
+                  "dy": -5
+                }
+              },
+              {
+                "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5, "font":"Roboto"},
+                "encoding": {
+                  "color": {"type": "nominal", "field": "Continent"}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
