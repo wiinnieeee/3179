@@ -8,22 +8,140 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-
+    
     <title>World Disaster Risk</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-    
+
     </head>
 
 <body>
-    <h1>World Disaster Risk</h1>
-    <div id="choropleth_map">
-    </div>
-    <script type="text/javascript">
-        var spec2 = "js/choropleth_map.json";
-        vegaEmbed('#choropleth_map', spec2).then(function(result) {
-          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-      </script>
+    <h1>WORLD DISASTER RISK</h1>
+    <p id = "subheader"> From 2010 to 2021</p>
+    <hr>
+    <p>Disasters are sudden events that always cause widespread destruction, major damage or loss of life, either done by forces of nature or human beings.
+      Disasters happen frequently across the globe, from small sovereigns to major countries. In WorldRiskReport, several indicators are used to determine the disaster risks for countries and regions worldwide.
+      The higher the World Risk Index (WRI) of the country, the higher its national disaster risks.</p>
+      <h2>#1 GLOBAL OVERVIEW</h2>
+      <p id="desc2">Through this map, we can see the WRI category of the regions worldwide in a big picture. We discover that throughout the years, 
+        <span id = "bold">South East Asian and African countries</span> always have <span id="red">medium, high and very high WRI</span>. A noticable change is <span id="bold"> Uruguay</span>, in which the WRI shot up from <span id="low">low</span> to <span id="veryhigh">very high</span> within a year in 2019.
+        This may because of the  <span id = "bold">floods and earthquakes</span> happening more frequently starting from 2019 in Uruguay.
+
+      </p>
+
+      <div id="choropleth_map">
+        <script type="text/javascript">
+          var spec1 = "js/choropleth_map.json";
+          vegaEmbed('#choropleth_map', spec1).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+      </div>
+    <br>
+    <br>
+    <br>
+      <br>
+      <h2>#2 STATS</h2>
+      <p id="desc2">The WRI are accessed from several attributes, such as <span id = "bold">Exposure, Vulnerability, Susceptibility, Lack of Adaptive Capacities and Lack of Coping Capabilities </span>. From the idiom below, we are able to observe the correlation of the attributes
+      with each other and also with the WRI. Selecting from the years, we can filter the pattern for each year as well. Overall, one obvious observation we can make is that most of the attributes have a <span id = "red"> positive correlation between them</span>. The <span id = "red"> positive correlation between the WRI and exposure
+        </span>would be highlighted in one of the idioms below in detail as it is <span id = "bold">most related with WRI</span> from the scatterplot matrix.
+      </span></p>
+
+      <div id="scatterplot">
+        <script type="text/javascript">
+          var spec3 = "js/scatterplot_mat.json";
+          vegaEmbed('#scatterplot', spec3).then(function(result) {
+             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+      </div>
+      <br>
+    <br>
+    <br>
+      <br>
+      <div class = "row">
+        <div class = "column">
+        <h2>#3 TOP-N REGIONS</h2>
+        <p id="desc2">For each year, we could rank the <span id = "veryhigh">top-N most dangerous regions</span>, a.k.a those with highest WRI, in which N is the number of regions. Within the 10 years time,
+        <span id = "veryhigh">Vanuatu</span> led at the first place, making it the most dangerous region in the world.</p>
+          <br>
+          <br>
+          <br>
+        <div id="bumpchart">
+          <script type="text/javascript">
+            var spec2_1 = "js/bumpchart.json";
+            vegaEmbed('#bumpchart', spec2_1).then(function(result) {
+              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+          </script>
+        </div>
+        </div>
+        <div class = "column">
+        <h2>#4 TREND OF ATTRIBUTES</h2>
+        <p id="desc2">Looking at more details on the attribute but focusing more on the big picture of the regions, in which we classify them into <span id = "bold">5 major continents</span>. Except for <span id = "oceania">
+        exposure </span>in which <span id = "oceania">Oceania</span> has the highest index score, <span id = "africas">Africas top the chart</span> for the other attributes. We can say that<span id = "europe"> European countries are the safest</span>
+          among all the other continents since the index score for all attributes are the <span id = "europe">lowest throughout the 10 years</span> compared to other continents. </p>
+
+        <div id="line">
+          <script type="text/javascript">
+            var spec4 = "js/line.json";
+            vegaEmbed('#line', spec4).then(function(result) {
+              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+          </script>
+        </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+        <br>
+        <h2>#5 COMPARISON</h2>
+        <p id="desc2">Using the <span id = "bold">radar chart, </span>we can compare the latest specifications of the countries in 2021, from all six different aspects.</p>
+      <div class = "row">
+        <div class = "column">
+        <br>
+        <br>
+            <div id="radar">
+              <script type="text/javascript">
+                var spec5 = "js/radar_1.json";
+                vegaEmbed('#radar', spec5).then(function(result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error);
+              </script>
+            </div>
+          </div>
+            <div class = "column">
+              <br>
+              <br>
+              <div id="radar_2">
+                <script type="text/javascript">
+                  var spec6 = "js/radar_2.json";
+                  vegaEmbed('#radar_2', spec6).then(function(result) {
+                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                  }).catch(console.error);
+                </script>
+              </div>
+          </div>
+        </div>
+    <br>
+      <br>
+      <br>
+      <br>
+      <h2>#6 MULTIVIEW</h2>
+      <p id="desc2">As said from above, we focus on the  relationship between <span id = "bold">WRI and exposure</span>.
+      We can use the continents to categorise the data. To see more details, we can scroll the scatterplot to <span id = "bold"> to zoom in </span> and view the correlation over the years
+      when hovered across. As a bonus to get more details from the overview, when we click on the dots, the trend of WRI of the specific country over 10 years would be displayed in
+      the line chart, with the region name at the background. When there is <span id = "bold">no region selected</span>, the line chart displays the <span id = "bold">trend of average WRI globally over the years.</span> </p>
+      <div id="dot_multi">
+        <script type="text/javascript">
+          var spec7 = "js/dot.json";
+          vegaEmbed('#dot_multi', spec7).then(function(result) {
+             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+      </div>
+    </body>
+    
 </body>
 </html>
