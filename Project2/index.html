@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
@@ -19,14 +15,17 @@
 
     </head>
 
-<body>
+<body>    
+  <div id = "overall">
     <h1>WORLD DISASTER RISK</h1>
+
     <p id = "subheader"> From 2011 to 2021</p>
-    <hr>
     <p>Disasters are sudden events that always cause widespread destruction, major damage or loss of life, either done by forces of nature or human beings.
       Disasters happen frequently across the globe, from small sovereigns to major countries. In WorldRiskReport, several indicators are used to determine the disaster risks for countries and regions worldwide.
       The higher the World Risk Index (WRI) of the country, the higher its national disaster risks.</p>
-      <h2>#1 GLOBAL OVERVIEW</h2>
+      <br>
+      <br>
+      <h2>GLOBAL OVERVIEW</h2>
       <p id="desc2">Through this map, we can see the WRI category of the regions worldwide in a big picture. We discover that throughout the years, 
         <span id = "bold">South East Asian and African countries</span> always have <span id="red">medium, high and very high WRI</span>. A noticable change is <span id="bold"> Uruguay</span>, in which the WRI shot up from <span id="low">low</span> to <span id="veryhigh">very high</span> within a year in 2019.
         This may because of the  <span id = "bold">floods and earthquakes</span> happening more frequently starting from 2019 in Uruguay.
@@ -45,7 +44,7 @@
     <br>
     <br>
       <br>
-      <h2>#2 STATS</h2>
+      <h2>STATISTICS OVERALL</h2>
       <p id="desc2">The WRI are accessed from several attributes, such as <span id = "bold">Exposure, Vulnerability, Susceptibility, Lack of Adaptive Capacities and Lack of Coping Capabilities </span>. From the idiom below, we are able to observe the correlation of the attributes
       with each other and also with the WRI. Selecting from the years, we can filter the pattern for each year as well. Overall, one obvious observation we can make is that most of the attributes have a <span id = "red"> positive correlation between them</span>. The <span id = "red"> positive correlation between the WRI and exposure
         </span>would be highlighted in one of the idioms below in detail as it is <span id = "bold">most related with WRI</span> from the scatterplot matrix.
@@ -65,7 +64,7 @@
       <br>
       <div class = "row">
         <div class = "column">
-        <h2>#3 TOP-N REGIONS</h2>
+        <h2>TOP-N REGIONS</h2>
         <p id="desc2">For each year, we could rank the <span id = "veryhigh">top-N most dangerous regions</span>, a.k.a those with highest WRI, in which N is the number of regions. Within the 10 years time,
         <span id = "veryhigh">Vanuatu</span> led at the first place, making it the most dangerous region in the world.</p>
           <br>
@@ -81,7 +80,7 @@
         </div>
         </div>
         <div class = "column">
-        <h2>#4 TREND OF ATTRIBUTES</h2>
+        <h2>TREND OF ATTRIBUTES</h2>
         <p id="desc2">Looking at more details on the attribute but focusing more on the big picture of the regions, in which we classify them into <span id = "bold">5 major continents</span>. Except for <span id = "oceania">
         exposure </span>in which <span id = "oceania">Oceania</span> has the highest index score, <span id = "africas">Africas top the chart</span> for the other attributes. We can say that<span id = "europe"> European countries are the safest</span>
           among all the other continents since the index score for all attributes are the <span id = "europe">lowest throughout the 10 years</span> compared to other continents. </p>
@@ -98,12 +97,11 @@
       </div>
       <br>
       <br>
-      <br>
         <br>
-        <h2>#5 COMPARISON</h2>
+        <h2>COMPARISON BETWEEN REGIONS</h2>
         <p id="desc2">Using the <span id = "bold">radar chart, </span>we can compare the latest specifications of the countries in 2021, from all six different aspects.</p>
       <div class = "row">
-        <div class = "column">
+        <div class = "column3">
         <br>
         <br>
             <div id="radar">
@@ -115,7 +113,7 @@
               </script>
             </div>
           </div>
-            <div class = "column">
+            <div class = "column3">
               <br>
               <br>
               <div id="radar_2">
@@ -126,13 +124,21 @@
                   }).catch(console.error);
                 </script>
               </div>
+            </div>
+            <div class = "column3">
+            <p id = float_desc>Attributes</p>
+            <p id = float_desc> <span id = "bold2">WRI</span>: World Risk Score of the region. </p>
+            <p id = float_desc> <span id = "bold2">Exposure</span>: Risk/exposure to natural hazards such as earthquakes, hurricanes, floods, droughts, and sea ​​level rise. </p>
+            <p id = float_desc> <span id = "bold2">Vulnerability</span>: Vulnerability depending on infrastructure, nutrition, housing situation, and economic framework conditions. </p>
+            <p id = float_desc> <span id = "bold2">Susceptibility</span>: Susceptibility depending on infrastructure, nutrition, housing situation, and economic framework conditions. </p>
+            <p id = float_desc> <span id = "bold2">Lack of Coping Capabilities </span>: Coping capacities in dependence of governance, preparedness and early warning, medical care, and social and material security. </p>
+            <p id = float_desc> <span id = "bold2">Lack of Adaptive Capacities</span>: Adaptive capacities related to coming natural events, climate change, and other challenges. </p>
           </div>
         </div>
     <br>
       <br>
       <br>
-      <br>
-      <h2>#6 MULTIVIEW</h2>
+      <h2>OVERVIEW AND DETAIL</h2>
       <p id="desc2">As said from above, we focus on the  relationship between <span id = "bold">WRI and exposure</span>.
       We can use the continents to categorise the data. To see more details, we can scroll the scatterplot to <span id = "bold"> to zoom in </span> and view the correlation over the years
       when hovered across. As a bonus to get more details from the overview, when we click on the dots, the trend of WRI of the specific country over 10 years would be displayed in
@@ -145,7 +151,7 @@
           }).catch(console.error);
         </script>
       </div>
+    </div>
     </body>
-    
-</body>
+
 </html>
