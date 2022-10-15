@@ -27,7 +27,7 @@
         "encoding": {
           "x": {"field": "Year", "type": "ordinal", "axis": {"title": "Year", "labelAngle":30, "titleFont":"Roboto", "labelFont":"Roboto", "titleFontSize":15,"labelFontSize":12}},
           "y": {"field": "Value", "type": "quantitative", "axis": {"title": "Attribute Index Score", "titleFont":"Roboto", "labelFont":"Roboto", "titleFontSize":15,"labelFontSize":12}},
-          "color": {"field": "Continent", "type": "nominal", "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a"]}}
+          "color": {"field": "Continent", "type": "nominal", "legend":{"orient":"bottom-right","titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a"]}}
         },
         "layer": [
           {"mark": "line"},
@@ -43,6 +43,7 @@
             }],
             "mark": "point",
             "encoding": {
+              
               "opacity": {
                 "condition": {
                   "param": "label",
@@ -68,8 +69,9 @@
             "encoding": {
               "text": {"type": "quantitative", "field": "Value", "format": ".2f"},
               "x": {"type": "ordinal", "field": "Year"},
-              "y": {"type": "quantitative", "field": "Value"}
-            },
+              "y": {"type": "quantitative", "field": "Value"},
+              "tooltip":[{"field":"Continent"},{"field":"Attribute", "type": "nominal"},{"field":"Value", "type": "quantitative", "format": ".2f"}]
+              },
             "layer": [
               {
                 "mark": {
@@ -90,7 +92,102 @@
             ]
           }
         ]
+      },
+      {
+      "mark": {
+      "type": "text",
+      "align": "left",
+      "baseline": "top",
+      "dx": -200,
+      "dy":-20,
+      "fontSize": 14,
+      "font":"Roboto",
+      "fontStyle":"Italic"
+      },
+      "encoding": {
+      "text": {"value":""},
+      "color": {"value":"black"}
       }
+  },
+  {
+    "encoding": {
+      "x": {"datum": "2019"}
+    },
+    "layer": [{
+      "mark": {
+        "type":"rule",
+        "strokeOpacity":0.3,
+        "color":"red",
+        "strokeWidth":2,
+        "strokeDash":[8, 8]
+    }}, {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 70,
+        "dy": -210,
+        "fontSize":15,
+        "font":"Roboto",
+        "x": "width",
+        "color":"red",
+        "text": "Australian Wildfire"
+        
+      }
+    }]
+  }, {
+    "encoding": {
+      "x": {"datum": "2011"}
+    },
+    "layer": [{
+      "mark": {
+        "type":"rule",
+        "strokeOpacity":0.3,
+        "color":"red",
+        "strokeWidth":2,
+        "strokeDash":[8, 8]
+    }}, {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 150,
+        "dy": -210,
+        "fontSize":15,
+        "font":"Roboto",
+        "x": "width",
+        "color":"red",
+        "text": "Tohoku Earthquake and Tsunami"
+        
+      }
+    }]
+  },{
+    "encoding": {
+      "x": {"datum": "2015"}
+    },
+    "layer": [{
+      "mark": {
+        "type":"rule",
+        "strokeOpacity":0.3,
+        "color":"red",
+        "strokeWidth":2,
+        "strokeDash":[8, 8]
+    }}, {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 70,
+        "dy": -210,
+        "fontSize":15,
+        "font":"Roboto",
+        "x": "width",
+        "color":"red",
+        "text": "Nepal Earthquake"
+        
+      }
+    }]
+  }
     ]
   }
   

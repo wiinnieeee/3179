@@ -35,15 +35,19 @@
             "type": "nominal",
             "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12},
             "scale": {
-                "scheme": "magma"
+                "scheme": "darkred"
                 }
           },
           "value": "grey"
         },
         "opacity": {
-            "condition": {"param": "year", "value": 1},
+            "condition": {"param": "year", "value": 0.3},
             "value": 0.005
       }
     }
+    
+},
+"config": {
+  "point": {"opacity": 0.5}
 }
 }

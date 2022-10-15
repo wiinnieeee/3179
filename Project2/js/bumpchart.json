@@ -1,6 +1,5 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
   "description": "thickness is not a channel since you shouldn't do ticks with varying thickness.",
-
   "title": {"text": "Countries with Top N WRI from 2011 to 2021", "font":"Roboto"},
 	"width": 600, "height": 400,
     "data": {"url":"https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_heatmap.csv",
@@ -8,7 +7,7 @@
         "WRI": "number"
        }}},
 	"params": [
-		{ "name": "top_n", "value": 5 ,
+		{ "name": "Top_N", "value": 5 ,
 			"bind": {"input": "range", "min": 1, "max": 20, "step": 1 }
 		}
 	],
@@ -23,7 +22,7 @@
 		}],
 		"groupby": ["Year"]
 	  },
-			{ "filter": "datum.rank <= top_n" }
+			{ "filter": "datum.rank <= Top_N" }
 	  ],
 
 		"encoding": {
@@ -37,14 +36,15 @@
       "y": {  "field": "rank",
               "type": "quantitative",
               "sort": "descending",
-              "scale": {"domain": [0.5, {"expr": "top_n+0.5"} ]},
+              "scale": {"domain": [0.5, {"expr": "Top_N+0.5"} ]},
               "axis": { "labelAngle": 0 , "labelFontSize": 12 ,
                         "tickMinStep": 1 ,
-                        "tickCount": {"expr": "top_n"},
+                        "tickCount": {"expr": "Top_N"},
                         "titleFontSize": 14, 
                         "title": "WRI Ranking", 
                         "titleFont":"Roboto", 
-                        "labelFont":"Roboto"}}
+                        "labelFont":"Roboto"}},
+      "tooltip":[{"field":"Year", "type": "ordinal"},{"field":"Region", "type": "nominal"},{"field":"rank", "type": "quantitative", "title":"Rank"}]
             },
             
 
@@ -72,7 +72,15 @@
 			"color": {
           "condition":  {"param": "sel_brand_leg", "empty": false, "value": "black"} ,
           "field": "Region"
-      }
+      },
+      "opacity":{
+        "condition": {
+          "param": "clicked",
+          "empty": false,
+          "value": 1
+        },
+        "value": 0.5
+  }
 		}
 
 	},
@@ -95,8 +103,35 @@
                 {"field":"Year", "type": "ordinal"},
                 {"field":"WRI", "type": "quantitative"},
                 {"field":"rank", "type": "quantitative"}]
-            }
     
+        }},
+        {
+          "transform": [
+            {"filter": {"field": "Year", "equal": "2021"}}
+          ],
+          "mark": {
+            "type": "text",
+            "yOffset": -12,
+            "fontSize": 10,
+            "fontStyle": "bold",
+            "font":"Roboto"
+          },
+            "encoding": {
+                "text": {"field": "Region"},
+                "opacity":{
+                  "condition": {
+                    "param": "clicked",
+                    "empty": false,
+                    "value": 1
+                  },
+                  "value": 0.8
+            }
+                
+            }
+
+
+
+
         }
 ]
 
