@@ -28,6 +28,13 @@
 	src: url(Roboto-Thin.ttf);
 }
 
+
+#intro {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
 #choropleth_map {
 	left: 100px;}
 
@@ -67,6 +74,7 @@
 
 #bold2 {
 	font-weight: bold;
+	color:#a50f15;
 	}
 
 #desc2 {
@@ -91,21 +99,21 @@
 }
 
 #oceania {
-	color: #ffb55a;
+	color: #648fff;
 	font-size: 18px;
 	font-weight: bold;
 
 }
 
 #africas {
-	color: #fd7f6f;
+	color: #ffb000 ;
 	font-size: 18px;
 	font-weight: bold;
 
 }
 
 #europe {
-	color: #bd7ebe;
+	color: #785ef0;
 	font-size: 18px;
 	font-weight: bold;
 
