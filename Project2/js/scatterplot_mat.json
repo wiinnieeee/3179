@@ -1,15 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {"text":"Correlation between each parameters worldwide each year","font":"Roboto"},
-    "data": {"url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_mat.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/wiinnieeee/3179/main/Project2/data/world_risk_index_mat.csv"},  
     "repeat": {
       "row": ["WRI", "Exposure", "Vulnerability","Susceptibility","Lack of Coping Capabilities"	,"Lack of Adaptive Capacities"],
       "column": ["Lack of Adaptive Capacities", "Lack of Coping Capabilities", "Susceptibility", "Vulnerability", "Exposure", "WRI"]
-    },  
-    
+    }, 
     "spec": {
-        "width":150,
-        "height":120,
+      "width":150,
+      "height":120,
         "params": [{
           "name": "brush",
           "select": {"type": "interval", "resolve": "global"}
@@ -45,9 +44,6 @@
             "value": 0.005
       }
     }
-    
-},
-"config": {
-  "point": {"opacity": 0.5}
+   
 }
 }
