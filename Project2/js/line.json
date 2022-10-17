@@ -27,7 +27,7 @@
         "encoding": {
           "x": {"field": "Year", "type": "ordinal", "axis": {"title": "Year", "labelAngle":30, "titleFont":"Roboto", "labelFont":"Roboto", "titleFontSize":15,"labelFontSize":12}},
           "y": {"field": "Value", "type": "quantitative", "axis": {"title": "Attribute Index Score", "titleFont":"Roboto", "labelFont":"Roboto", "titleFontSize":15,"labelFontSize":12}},
-          "color": {"field": "Continent", "type": "nominal", "legend":{"orient":"bottom-right","titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a"]}}
+          "color": {"field": "Continent", "type": "nominal", "legend":{"orient":"bottom-right","titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#FFB000", "#FE6100", "#DC267F", "#785EF0", "#648FFF"]}}
         },
         "layer": [
           {"mark": "line"},

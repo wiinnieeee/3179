@@ -9,6 +9,7 @@
     "spec": {
       "width":150,
       "height":120,
+      "layer":[{
         "params": [{
           "name": "brush",
           "select": {"type": "interval", "resolve": "global"}
@@ -43,7 +44,168 @@
             "condition": {"param": "year", "value": 0.3},
             "value": 0.005
       }
+    }},
+    {
+      "mark": {
+        "type": "line",
+        "color": "yellow"
+      },
+      "transform": [
+        {
+          "regression": "WRI",
+          "on": "Exposure"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": {"repeat": "column"},
+          "type": "quantitative"
+        },
+        "y": {
+          "field": {"repeat": "row"},
+          "type": "quantitative"
+        }
+      }
+    
+  },
+  {
+    "mark": {
+      "type": "line",
+      "color": "yellow"
+    },
+    "transform": [
+      {
+        "regression": "Vulnerability",
+        "on": "Susceptibility"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": {"repeat": "column"},
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {"repeat": "row"},
+        "type": "quantitative"
+      }
     }
+  
+},
+{
+  "mark": {
+    "type": "line",
+    "color": "yellow"
+  },
+  "transform": [
+    {
+      "regression": "Lack of Coping Capabilities",
+      "on": "Vulnerability"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": {"repeat": "column"},
+      "type": "quantitative"
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+    }
+  }
+
+},
+{
+  "mark": {
+    "type": "line",
+    "color": "yellow"
+  },
+  "transform": [
+    {
+      "regression": "Vulnerability",
+      "on": "Lack of Adaptive Capacities"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": {"repeat": "column"},
+      "type": "quantitative"
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+    }
+  }
+
+},
+{
+  "mark": {
+    "type": "line",
+    "color": "yellow"
+  },
+  "transform": [
+    {
+      "regression": "Lack of Coping Capabilities",
+      "on": "Lack of Adaptive Capacities"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": {"repeat": "column"},
+      "type": "quantitative"
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+    }
+  }
+
+},
+{
+  "mark": {
+    "type": "line",
+    "color": "yellow"
+  },
+  "transform": [
+    {
+      "regression": "Lack of Coping Capabilities",
+      "on": "Susceptibility"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": {"repeat": "column"},
+      "type": "quantitative"
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+    }
+  }
+
+},
+{
+  "mark": {
+    "type": "line",
+    "color": "yellow"
+  },
+  "transform": [
+    {
+      "regression": "Susceptibility",
+      "on": "Lack of Adaptive Capacities"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": {"repeat": "column"},
+      "type": "quantitative"
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+    }
+  }
+
+}]
    
 }
 }
