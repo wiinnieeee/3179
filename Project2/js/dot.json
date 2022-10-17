@@ -147,7 +147,7 @@
             
             "mark": {"type": "circle", "size": 125, "opacity": 0.7},
             
-            "encoding": {"color": {"field": "name", "title": "Continent", "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a"]}},
+            "encoding": {"color": {"field": "name", "title": "Continent", "legend":{"titleFont":"Roboto", "titleFontSize":15, "labelFont":"Roboto", "labelFontSize":12}, "scale":{"range":["#FFB000", "#FE6100", "#DC267F", "#785EF0", "#648FFF"]}},
           "tooltip":[{"field":"year", "title":"Year"},{"field":"name", "title":"Continent"},{"field":"year", "title":"Year"},{"field":"WRI", "title":"WRI"},{"field":"Exposure", "title":"Exposure"}]}
           },
           {
@@ -211,7 +211,7 @@
       "x": {"title": "Year", "field": "year", "type": "nominal","axis": {"tickCount": 1, "title": "Year", "titleFont":"Roboto", "labelFont":"Roboto"}},
       "y": {"title": "WRI", "aggregate": "average", "field": "WRI", "scale": {"domain": [0,60]},"axis": {"title": "WRI", "titleFont":"Roboto", "labelFont":"Roboto"}}
     },
-    "mark": {"type": "line", "color": "#4421af"},
+    "mark": {"type": "line", "color": "#000000"},
     "transform": [{"filter": {"param": "clicked"}}]
     
   },
@@ -224,7 +224,7 @@
   {"title":"WRI", "field": "WRI", "aggregate":"average", "type": "quantitative", "format":".2f"}]
 },
 
-"mark": {"type": "point", "color": "#b30000"},
+"mark": {"type": "point", "color": "#3810bb"},
 "transform": [{"filter": {"param": "clicked"}}]
 },
 {
